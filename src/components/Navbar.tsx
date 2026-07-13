@@ -161,10 +161,10 @@ export function Navbar(props: NavbarProps): React.ReactElement {
           <Image
             src="/images/fractionex-logo.png"
             alt="Fractionex"
-            width={160}
-            height={40}
+            width={200}
+            height={50}
             priority
-            className="h-10 w-auto"
+            className="h-[50px] w-auto"
           />
         </Link>
 
