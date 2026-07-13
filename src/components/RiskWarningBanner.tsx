@@ -15,7 +15,7 @@ export function RiskWarningBanner(): React.ReactNode {
   return (
     <div
       className={cn(
-        'sticky top-14 z-40 w-full',
+        'sticky top-[62px] z-40 w-full',
         'bg-secondary border-b border-border',
         'flex items-center justify-center',
         'py-3 px-6 sm:py-3 sm:px-5 md:py-3 md:px-6',
