@@ -1,6 +1,6 @@
-# TheAngel Website
+# Fractionex Website
 
-Static site recreation of TheAngel.app, migrated from WordPress to GitHub Pages.
+Static site recreation of Fractionex.io, migrated from WordPress to GitHub Pages.
 
 ## Project Details
 
@@ -23,6 +23,4 @@ See `claude.md` for full project specifications, design guidelines, and developm
 
 Push to GitHub Pages. Site will be available at `https://<username>.github.io/theangel/`
 
-## License
 
-© TheAngel 2026
