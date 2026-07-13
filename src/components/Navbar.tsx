@@ -142,7 +142,7 @@ export function Navbar(props: NavbarProps): React.ReactElement {
       <nav
         ref={navRef}
         className={cn(
-          'fixed top-0 left-0 right-0 h-[62px] z-100 bg-white',
+          'fixed top-0 left-0 right-0 h-[100px] z-100 bg-white',
           isScrolled
             ? 'border-b border-gray-200 shadow-sm'
             : 'border-b border-transparent'
@@ -375,7 +375,7 @@ export function Navbar(props: NavbarProps): React.ReactElement {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div
-          className="fixed top-[62px] left-0 right-0 bottom-0 w-screen bg-white z-99 md:hidden overflow-y-auto"
+          className="fixed top-[100px] left-0 right-0 bottom-0 w-screen bg-white z-99 md:hidden overflow-y-auto"
           style={{
             animation: 'slideDown 300ms ease-out forwards',
           }}
