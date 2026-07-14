@@ -13,8 +13,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coinbase - Buy & Sell Bitcoin, Ethereum, and more with trust",
-  description: "Coinbase is the most trusted platform in the UK for buying, selling and trading crypto.",
+  title: "FractionEx - Fractional Property Investment & Exchange",
+  description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange. The most trusted fractional property platform.",
+  keywords: "fractional property, property investment, real estate, UK property, property exchange, fractional ownership",
+  authors: [{ name: "FractionEx" }],
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: "https://fractionex.com",
+    siteName: "FractionEx",
+    title: "FractionEx - Fractional Property Investment & Exchange",
+    description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FractionEx - Fractional Property Investment & Exchange",
+    description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange.",
+  },
 };
 
 export default function RootLayout({
