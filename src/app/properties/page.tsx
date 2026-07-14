@@ -1,8 +1,7 @@
 import { Navbar } from '@/components/Navbar';
 import { RiskWarningBanner } from '@/components/RiskWarningBanner';
 import { HeroSection } from '@/components/HeroSection';
-import { FeaturesCarousel } from '@/components/FeaturesCarousel';
-import { CryptoAssetsGrid } from '@/components/CryptoAssetsGrid';
+import { PropertyListings } from '@/components/PropertyListings';
 import { TrustSection } from '@/components/TrustSection';
 import { Footer } from '@/components/Footer';
 
@@ -27,11 +26,8 @@ export default function Properties() {
           videoSrc="/images/coinbase/hero-video.webm"
         />
 
-        {/* Features Carousel */}
-        <FeaturesCarousel />
-
-        {/* Crypto Assets Grid */}
-        <CryptoAssetsGrid />
+        {/* Property Listings */}
+        <PropertyListings />
 
         {/* Trust Section */}
         <TrustSection />
