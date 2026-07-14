@@ -6,9 +6,9 @@ import { RiskWarningBanner } from '@/components/RiskWarningBanner';
 import { Footer } from '@/components/Footer';
 
 interface PropertyDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 // Generate static params for all properties
@@ -322,10 +322,11 @@ const PROPERTY_DATA: Record<
   },
 };
 
-export default function PropertyDetailPage({
+export default async function PropertyDetailPage({
   params,
-}: PropertyDetailPageProps): React.ReactElement {
-  const property = PROPERTY_DATA[params.id];
+}: PropertyDetailPageProps): Promise<React.ReactElement> {
+  const { id } = await params;
+  const property = PROPERTY_DATA[id];
 
   if (!property) {
     return (
