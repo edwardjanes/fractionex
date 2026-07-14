@@ -20,9 +20,9 @@ const FAQ_SECTIONS: FAQSection[] = [
     title: 'The Basics',
     items: [
       {
-        question: 'What is FractionEx?',
+        question: 'What is Fractionex?',
         answer:
-          'FractionEx is a fractional property exchange. We convert real properties into digital tokens, so you can buy a share of a property from as little as £10, earn your portion of its income automatically, and sell your tokens on our exchange whenever you choose.',
+          'Fractionex is a fractional property exchange. We convert real properties into digital tokens, so you can buy a share of a property from as little as £10, earn your portion of its income automatically, and sell your tokens on our exchange whenever you choose.',
       },
       {
         question: 'What is a property token?',
@@ -37,12 +37,12 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'How is this different from a REIT?',
         answer:
-          'With a REIT, you buy shares in a company that owns a portfolio you don\'t choose. With FractionEx, you pick the individual properties you invest in, see the exact asset and contract terms before buying, and hold a direct fractional interest — not shares in a manager.',
+          'With a REIT, you buy shares in a company that owns a portfolio you don\'t choose. With Fractionex, you pick the individual properties you invest in, see the exact asset and contract terms before buying, and hold a direct fractional interest — not shares in a manager.',
       },
       {
         question: 'How is this different from property crowdfunding?',
         answer:
-          'Two main ways: entry price and exit. Most crowdfunding platforms require hundreds or thousands to participate and lock your money in until the property is sold — often years. FractionEx starts at £10, and your tokens can be listed on our exchange at any time.',
+          'Two main ways: entry price and exit. Most crowdfunding platforms require hundreds or thousands to participate and lock your money in until the property is sold — often years. Fractionex starts at £10, and your tokens can be listed on our exchange at any time.',
       },
       {
         question: 'Is this cryptocurrency?',
@@ -62,7 +62,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       },
       {
         question: 'What\'s the minimum investment?',
-        answer: '£10. That\'s the price of entry to the property market on FractionEx.',
+        answer: '£10. That\'s the price of entry to the property market on Fractionex.',
       },
       {
         question: 'How do I sign up?',
@@ -153,7 +153,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'How do I sell my tokens?',
         answer:
-          'List them on the FractionEx exchange at your chosen price. When a buyer matches, the trade settles and funds land in your account. No estate agents, no conveyancing, no six-month wait.',
+          'List them on the Fractionex exchange at your chosen price. When a buyer matches, the trade settles and funds land in your account. No estate agents, no conveyancing, no six-month wait.',
       },
       {
         question: 'How quickly can I sell?',
@@ -183,10 +183,10 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'What backs my tokens?',
         answer:
-          'A real, verified property. Every listing on FractionEx corresponds to a tangible asset with its ownership structure and your rights documented in the smart contract.',
+          'A real, verified property. Every listing on Fractionex corresponds to a tangible asset with its ownership structure and your rights documented in the smart contract.',
       },
       {
-        question: 'Is FractionEx regulated?',
+        question: 'Is Fractionex regulated?',
         answer:
           '[CONFIRM — HARD BLOCKER: state the actual regulator, licence, or registration. Do not publish aspirational compliance language.]',
         isPlaceholder: true,
@@ -198,9 +198,9 @@ const FAQ_SECTIONS: FAQSection[] = [
         isPlaceholder: true,
       },
       {
-        question: 'What happens to my investment if FractionEx goes out of business?',
+        question: 'What happens to my investment if Fractionex goes out of business?',
         answer:
-          '[CONFIRM: the legal structure — whether each property is held in a separate SPV so investor ownership is ring-fenced from FractionEx\'s own balance sheet.]',
+          '[CONFIRM: the legal structure — whether each property is held in a separate SPV so investor ownership is ring-fenced from Fractionex\'s own balance sheet.]',
         isPlaceholder: true,
       },
       {
@@ -246,7 +246,7 @@ const FAQ_SECTIONS: FAQSection[] = [
           'Yes. Our Tokenisation as a Service (TaaS) handles the full process: asset evaluation, legal structuring, token creation, and listing on the platform, promoted to our investor community. Get in touch via our contact page.',
       },
       {
-        question: 'I\'m a developer — can I raise capital through FractionEx?',
+        question: 'I\'m a developer — can I raise capital through Fractionex?',
         answer:
           'Yes. An IPTO lets you raise capital by offering tokenised ownership in your property or development directly to our investor base. Contact us to discuss your project.',
       },
@@ -276,7 +276,7 @@ export function FAQAccordion(): React.ReactElement {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-gray-600">
-            Everything you need to know about fractional property investing with FractionEx.
+            Everything you need to know about fractional property investing with Fractionex.
           </p>
         </div>
 

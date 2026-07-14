@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FractionEx - Fractional Property Investment & Exchange",
+  title: "Fractionex - Fractional Property Investment & Exchange",
   description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange. The most trusted fractional property platform.",
   keywords: "fractional property, property investment, real estate, UK property, property exchange, fractional ownership",
-  authors: [{ name: "FractionEx" }],
+  authors: [{ name: "Fractionex" }],
   openGraph: {
     type: "website",
     locale: "en_GB",
     url: "https://fractionex.com",
-    siteName: "FractionEx",
-    title: "FractionEx - Fractional Property Investment & Exchange",
+    siteName: "Fractionex",
+    title: "Fractionex - Fractional Property Investment & Exchange",
     description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FractionEx - Fractional Property Investment & Exchange",
+    title: "Fractionex - Fractional Property Investment & Exchange",
     description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange.",
   },
 };
