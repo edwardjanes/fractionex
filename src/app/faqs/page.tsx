@@ -1,8 +1,6 @@
 import { Navbar } from '@/components/Navbar';
 import { RiskWarningBanner } from '@/components/RiskWarningBanner';
-import { HeroSection } from '@/components/HeroSection';
-import { FeaturesCarousel } from '@/components/FeaturesCarousel';
-import { CryptoAssetsGrid } from '@/components/CryptoAssetsGrid';
+import { FAQAccordion } from '@/components/FAQAccordion';
 import { TrustSection } from '@/components/TrustSection';
 import { Footer } from '@/components/Footer';
 
@@ -17,21 +15,8 @@ export default function FAQs() {
         {/* Risk Warning Banner */}
         <RiskWarningBanner />
 
-        {/* Hero Section */}
-        <HeroSection
-          headline="Frequently Asked Questions"
-          subheading="Find answers to common questions about Fractionex."
-          description="Everything you need to know about fractional real estate investing."
-          ctaText="Explore FAQs"
-          ctaHref="/faqs"
-          videoSrc="/images/coinbase/hero-video.webm"
-        />
-
-        {/* Features Carousel */}
-        <FeaturesCarousel />
-
-        {/* Crypto Assets Grid */}
-        <CryptoAssetsGrid />
+        {/* FAQ Accordion */}
+        <FAQAccordion />
 
         {/* Trust Section */}
         <TrustSection />
