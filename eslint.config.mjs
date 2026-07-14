@@ -12,6 +12,12 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Agent worktrees and IDE artifacts:
+    ".claude/**",
+    ".vscode/**",
+    ".idea/**",
+    // Dependencies:
+    "node_modules/**",
   ]),
 ]);
 
