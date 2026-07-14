@@ -2,8 +2,9 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { cn } from '@/lib/utils';
-import { LogoIcon, IconX } from '@/components/icons';
+import { IconX } from '@/components/icons';
 
 interface FooterLink {
   text: string;
@@ -36,28 +37,28 @@ export function Footer({
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
+        { text: 'About', href: '/about' },
         { text: 'Careers', href: '#' },
         { text: 'Blog', href: '#' },
         { text: 'Press', href: '#' },
       ],
     },
     {
-      title: 'Legal & Privacy',
+      title: 'Products',
       links: [
-        { text: 'Security', href: '#' },
-        { text: 'Legal', href: '#' },
-        { text: 'Privacy', href: '#' },
-        { text: 'Cookie Policy', href: '#' },
+        { text: 'How It Works', href: '/how-it-works' },
+        { text: 'Properties', href: '/properties' },
+        { text: 'Insights', href: '/insights' },
+        { text: 'FAQs', href: '/faqs' },
       ],
     },
     {
-      title: 'Products',
+      title: 'Legal & Privacy',
       links: [
-        { text: 'Coinbase App', href: '#' },
-        { text: 'Coinbase Pro', href: '#' },
-        { text: 'Coinbase Prime', href: '#' },
-        { text: 'Coinbase Commerce', href: '#' },
+        { text: 'Security', href: '/security' },
+        { text: 'Legal', href: '/legal' },
+        { text: 'Privacy', href: '/privacy' },
+        { text: 'Cookie Policy', href: '/cookie-policy' },
       ],
     },
     {
@@ -73,12 +74,12 @@ export function Footer({
   socialLinks = [
     {
       icon: <IconX className="w-5 h-5" />,
-      href: 'https://twitter.com/coinbase',
+      href: 'https://twitter.com/fractionex',
       label: 'X / Twitter',
       external: true,
     },
   ],
-  copyright = '© 2026 Coinbase. All rights reserved.',
+  copyright = '© 2026 Fractionex. All rights reserved.',
   languageLabel = 'English - United Kingdom',
   languageValue = 'en-GB',
 }: FooterProps): React.ReactElement {
@@ -92,7 +93,15 @@ export function Footer({
         {/* Brand Section */}
         <div className="footer-brand border-b border-gray-700/40">
           <div className="flex items-start gap-4">
-            <LogoIcon className="w-10 h-10 flex-shrink-0 mt-0" />
+            <Link href="/" className="flex-shrink-0">
+              <Image
+                src="/images/fractionex-logo.png"
+                alt="Fractionex"
+                width={160}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </Link>
             <div>
               <p className="text-xs text-gray-500 leading-relaxed m-0">
                 {copyright}
