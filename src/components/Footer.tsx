@@ -95,7 +95,7 @@ export function Footer({
           <div className="flex items-start gap-4">
             <Link href="/" className="flex-shrink-0">
               <Image
-                src="/images/fractionex-logo.png"
+                src="/images/logo-white.png"
                 alt="Fractionex"
                 width={160}
                 height={40}
