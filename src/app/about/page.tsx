@@ -1,9 +1,6 @@
 import { Navbar } from '@/components/Navbar';
 import { RiskWarningBanner } from '@/components/RiskWarningBanner';
-import { HeroSection } from '@/components/HeroSection';
-import { FeaturesCarousel } from '@/components/FeaturesCarousel';
-import { CryptoAssetsGrid } from '@/components/CryptoAssetsGrid';
-import { TrustSection } from '@/components/TrustSection';
+import { AboutPageContent } from '@/components/AboutPageContent';
 import { Footer } from '@/components/Footer';
 
 export default function About() {
@@ -17,24 +14,8 @@ export default function About() {
         {/* Risk Warning Banner */}
         <RiskWarningBanner />
 
-        {/* Hero Section */}
-        <HeroSection
-          headline="About Fractionex"
-          subheading="Democratizing real estate investing through blockchain technology."
-          description="Learn about our mission to make premium property investment accessible to everyone."
-          ctaText="Learn More"
-          ctaHref="/about"
-          videoSrc="/images/coinbase/hero-video.webm"
-        />
-
-        {/* Features Carousel */}
-        <FeaturesCarousel />
-
-        {/* Crypto Assets Grid */}
-        <CryptoAssetsGrid />
-
-        {/* Trust Section */}
-        <TrustSection />
+        {/* About Page Content */}
+        <AboutPageContent />
       </main>
 
       {/* Footer */}
