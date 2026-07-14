@@ -11,6 +11,18 @@ interface PropertyDetailPageProps {
   };
 }
 
+// Generate static params for all properties
+export function generateStaticParams() {
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' },
+    { id: '5' },
+    { id: '6' },
+  ];
+}
+
 // Mock property data - in a real app, this would come from a database
 const PROPERTY_DATA: Record<
   string,
@@ -126,6 +138,186 @@ const PROPERTY_DATA: Record<
       'Student tenant seasonality',
       'Regulatory changes in rental markets',
       'Maintenance and capex requirements',
+    ],
+  },
+  '3': {
+    title: 'Retail Shopping Centre',
+    location: 'Birmingham, UK',
+    images: [
+      '/images/coinbase/feature-3.webp',
+      '/images/coinbase/feature-1.webp',
+      '/images/coinbase/feature-2.webp',
+    ],
+    valuation: '£52.0M',
+    expectedReturn: '8.2%',
+    sharePrice: '£320',
+    sharesAvailable: 950,
+    sharesTotal: 16250,
+    occupancyRate: '95%',
+    description:
+      'Premier retail shopping centre in Birmingham with anchor tenants and premium brand mix, generating strong and stable rental income.',
+    highlights: [
+      'Prime retail location',
+      'Anchor tenant stability',
+      'Premium brand mix',
+      'High foot traffic',
+    ],
+    keyMetrics: [
+      { label: 'Total Valuation', value: '£52.0M' },
+      { label: 'Annual Yield', value: '8.2%' },
+      { label: 'Share Price', value: '£320' },
+      { label: 'Occupancy Rate', value: '95%' },
+      { label: 'Retail Units', value: '85+' },
+      { label: 'Year Built', value: '2008' },
+    ],
+    about:
+      'A destination retail centre positioned as a key shopping hub in Birmingham. The property features a carefully curated mix of high-street and premium brands, consistent visitor footfall, and long-term anchor tenant agreements.',
+    investmentTerms: [
+      { label: 'Minimum Investment', value: '£320 (1 share)' },
+      { label: 'Investment Horizon', value: '5-8 years' },
+      { label: 'Dividend Frequency', value: 'Quarterly' },
+      { label: 'Exit Strategy', value: 'Strategic buyer or refinance' },
+    ],
+    risks: [
+      'Retail sector transformation',
+      'E-commerce competition',
+      'Anchor tenant concentration',
+      'Consumer spending cyclicality',
+    ],
+  },
+  '4': {
+    title: 'Luxury Apartments',
+    location: 'Edinburgh, UK',
+    images: [
+      '/images/coinbase/feature-1.webp',
+      '/images/coinbase/feature-2.webp',
+      '/images/coinbase/feature-3.webp',
+    ],
+    valuation: '£35.8M',
+    expectedReturn: '7.1%',
+    sharePrice: '£215',
+    sharesAvailable: 1800,
+    sharesTotal: 16651,
+    occupancyRate: '90%',
+    description:
+      'Exclusive luxury apartment development in Edinburgh\'s prestigious West End, targeting high-net-worth individuals and corporate housing.',
+    highlights: [
+      'Luxury finishes',
+      'Premium location',
+      'Corporate housing demand',
+      'Capital growth potential',
+    ],
+    keyMetrics: [
+      { label: 'Total Valuation', value: '£35.8M' },
+      { label: 'Annual Yield', value: '7.1%' },
+      { label: 'Share Price', value: '£215' },
+      { label: 'Occupancy Rate', value: '90%' },
+      { label: 'Luxury Units', value: '120+' },
+      { label: 'Year Built', value: '2019' },
+    ],
+    about:
+      'An ultra-modern luxury apartment development in one of Edinburgh\'s most desirable neighbourhoods. Featuring penthouses, duplexes, and premium apartments with concierge services and bespoke finishes targeting affluent investors and executives.',
+    investmentTerms: [
+      { label: 'Minimum Investment', value: '£215 (1 share)' },
+      { label: 'Investment Horizon', value: '7-10 years' },
+      { label: 'Dividend Frequency', value: 'Quarterly' },
+      { label: 'Exit Strategy', value: 'Institutional buyer or conversion' },
+    ],
+    risks: [
+      'Luxury market sensitivity',
+      'Regulatory changes',
+      'Tenant credit risk',
+      'Market downturn exposure',
+    ],
+  },
+  '5': {
+    title: 'Business Park',
+    location: 'Bristol, UK',
+    images: [
+      '/images/coinbase/feature-2.webp',
+      '/images/coinbase/feature-3.webp',
+      '/images/coinbase/feature-1.webp',
+    ],
+    valuation: '£41.3M',
+    expectedReturn: '7.9%',
+    sharePrice: '£285',
+    sharesAvailable: 1100,
+    sharesTotal: 14474,
+    occupancyRate: '87%',
+    description:
+      'Modern business park in Bristol hosting tech companies and professional services firms, benefiting from the city\'s tech hub status.',
+    highlights: [
+      'Tech hub location',
+      'Modern facilities',
+      'Blue-chip tenants',
+      'Growing demand',
+    ],
+    keyMetrics: [
+      { label: 'Total Valuation', value: '£41.3M' },
+      { label: 'Annual Yield', value: '7.9%' },
+      { label: 'Share Price', value: '£285' },
+      { label: 'Occupancy Rate', value: '87%' },
+      { label: 'Office Units', value: '45+' },
+      { label: 'Year Built', value: '2010' },
+    ],
+    about:
+      'A contemporary business park ideally positioned in Bristol\'s burgeoning tech corridor. The property attracts innovative companies, scale-ups, and established professional services firms, all benefiting from the city\'s reputation as a tech hub.',
+    investmentTerms: [
+      { label: 'Minimum Investment', value: '£285 (1 share)' },
+      { label: 'Investment Horizon', value: '6-9 years' },
+      { label: 'Dividend Frequency', value: 'Quarterly' },
+      { label: 'Exit Strategy', value: 'Tech investor or developer' },
+    ],
+    risks: [
+      'Tech sector volatility',
+      'Co-working competition',
+      'Hybrid work trends',
+      'Tenant concentration',
+    ],
+  },
+  '6': {
+    title: 'Hotel & Leisure',
+    location: 'Liverpool, UK',
+    images: [
+      '/images/coinbase/feature-3.webp',
+      '/images/coinbase/feature-1.webp',
+      '/images/coinbase/feature-2.webp',
+    ],
+    valuation: '£29.7M',
+    expectedReturn: '8.5%',
+    sharePrice: '£195',
+    sharesAvailable: 2000,
+    sharesTotal: 15230,
+    occupancyRate: '91%',
+    description:
+      'Premier hotel and leisure destination in Liverpool, positioned to capture both tourism and business travel demand in the thriving city.',
+    highlights: [
+      'Tourism hotspot',
+      'Business travel demand',
+      'Premium facilities',
+      'Event venue potential',
+    ],
+    keyMetrics: [
+      { label: 'Total Valuation', value: '£29.7M' },
+      { label: 'Annual Yield', value: '8.5%' },
+      { label: 'Share Price', value: '£195' },
+      { label: 'Occupancy Rate', value: '91%' },
+      { label: 'Hotel Rooms', value: '250+' },
+      { label: 'Year Built', value: '2012' },
+    ],
+    about:
+      'A premium hotel and leisure complex offering 250+ rooms, conference facilities, and leisure amenities. Positioned at the heart of Liverpool\'s cultural and business district, capitalizing on strong tourism growth and business travel.',
+    investmentTerms: [
+      { label: 'Minimum Investment', value: '£195 (1 share)' },
+      { label: 'Investment Horizon', value: '5-8 years' },
+      { label: 'Dividend Frequency', value: 'Quarterly' },
+      { label: 'Exit Strategy', value: 'Hospitality operator or sale' },
+    ],
+    risks: [
+      'Tourism seasonality',
+      'Economic downturn impact',
+      'Operational complexity',
+      'Travel demand volatility',
     ],
   },
 };
