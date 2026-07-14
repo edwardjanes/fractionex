@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 interface FAQItem {
@@ -373,18 +374,18 @@ export function FAQAccordion(): React.ReactElement {
             Get in touch with our team or join the waitlist for early access.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/contact"
-              className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors"
+              className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors inline-block text-center"
             >
               Contact Us
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
-              className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full border-2 border-blue-600 hover:bg-blue-50 transition-colors"
+              className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full border-2 border-blue-600 hover:bg-blue-50 transition-colors inline-block text-center"
             >
               Get Early Access
-            </a>
+            </Link>
           </div>
         </div>
       </div>
