@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Navbar } from '@/components/Navbar';
 import { RiskWarningBanner } from '@/components/RiskWarningBanner';
 import { Footer } from '@/components/Footer';
@@ -11,7 +10,6 @@ interface PropertyDetailPageProps {
   }>;
 }
 
-// Generate static params for all properties
 export function generateStaticParams() {
   return [
     { id: '1' },
@@ -23,13 +21,12 @@ export function generateStaticParams() {
   ];
 }
 
-// Mock property data - in a real app, this would come from a database
 const PROPERTY_DATA: Record<
   string,
   {
     title: string;
     location: string;
-    images: string[];
+    type: string;
     valuation: string;
     expectedReturn: string;
     sharePrice: string;
@@ -38,26 +35,16 @@ const PROPERTY_DATA: Record<
     occupancyRate: string;
     description: string;
     highlights: string[];
-    keyMetrics: {
-      label: string;
-      value: string;
-    }[];
+    keyMetrics: { label: string; value: string }[];
     about: string;
-    investmentTerms: {
-      label: string;
-      value: string;
-    }[];
+    investmentTerms: { label: string; value: string }[];
     risks: string[];
   }
 > = {
   '1': {
     title: 'Premium Office Tower',
     location: 'London, UK',
-    images: [
-      '/images/coinbase/feature-1.webp',
-      '/images/coinbase/feature-2.webp',
-      '/images/coinbase/feature-3.webp',
-    ],
+    type: 'Office',
     valuation: '£45.2M',
     expectedReturn: '7.5%',
     sharePrice: '£250',
@@ -98,11 +85,7 @@ const PROPERTY_DATA: Record<
   '2': {
     title: 'Residential Complex',
     location: 'Manchester, UK',
-    images: [
-      '/images/coinbase/feature-2.webp',
-      '/images/coinbase/feature-3.webp',
-      '/images/coinbase/feature-1.webp',
-    ],
+    type: 'Residential',
     valuation: '£28.5M',
     expectedReturn: '6.8%',
     sharePrice: '£180',
@@ -143,11 +126,7 @@ const PROPERTY_DATA: Record<
   '3': {
     title: 'Retail Shopping Centre',
     location: 'Birmingham, UK',
-    images: [
-      '/images/coinbase/feature-3.webp',
-      '/images/coinbase/feature-1.webp',
-      '/images/coinbase/feature-2.webp',
-    ],
+    type: 'Retail',
     valuation: '£52.0M',
     expectedReturn: '8.2%',
     sharePrice: '£320',
@@ -188,11 +167,7 @@ const PROPERTY_DATA: Record<
   '4': {
     title: 'Luxury Apartments',
     location: 'Edinburgh, UK',
-    images: [
-      '/images/coinbase/feature-1.webp',
-      '/images/coinbase/feature-2.webp',
-      '/images/coinbase/feature-3.webp',
-    ],
+    type: 'Residential',
     valuation: '£35.8M',
     expectedReturn: '7.1%',
     sharePrice: '£215',
@@ -233,11 +208,7 @@ const PROPERTY_DATA: Record<
   '5': {
     title: 'Business Park',
     location: 'Bristol, UK',
-    images: [
-      '/images/coinbase/feature-2.webp',
-      '/images/coinbase/feature-3.webp',
-      '/images/coinbase/feature-1.webp',
-    ],
+    type: 'Office',
     valuation: '£41.3M',
     expectedReturn: '7.9%',
     sharePrice: '£285',
@@ -278,11 +249,7 @@ const PROPERTY_DATA: Record<
   '6': {
     title: 'Hotel & Leisure',
     location: 'Liverpool, UK',
-    images: [
-      '/images/coinbase/feature-3.webp',
-      '/images/coinbase/feature-1.webp',
-      '/images/coinbase/feature-2.webp',
-    ],
+    type: 'Leisure',
     valuation: '£29.7M',
     expectedReturn: '8.5%',
     sharePrice: '£195',
@@ -332,13 +299,10 @@ export default async function PropertyDetailPage({
     return (
       <div className="min-h-screen bg-white">
         <Navbar />
-        {/* Offset for fixed 69px nav */}
         <div style={{ height: '69px' }} />
         <RiskWarningBanner />
         <main className="flex flex-col items-center justify-center min-h-[60vh]">
-          <h1 className="text-3xl font-bold text-black mb-4">
-            Property Not Found
-          </h1>
+          <h1 className="text-3xl font-bold text-black mb-4">Property Not Found</h1>
           <p className="text-gray-600 mb-8">
             The property you&apos;re looking for doesn&apos;t exist or has been removed.
           </p>
@@ -357,10 +321,7 @@ export default async function PropertyDetailPage({
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-
-      {/* Offset for fixed 69px nav */}
       <div style={{ height: '69px' }} />
-
       <RiskWarningBanner />
 
       <main className="flex flex-col">
@@ -374,65 +335,50 @@ export default async function PropertyDetailPage({
           </Link>
         </div>
 
-        {/* Hero Section with Images */}
+        {/* Visual header — branded placeholder (no Coinbase images) */}
         <div className="w-full bg-gray-100">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 py-12">
-              {/* Main Image */}
-              <div className="lg:col-span-2">
-                <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden bg-gray-200">
-                  <Image
-                    src={property.images[0]}
-                    alt={property.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-
-              {/* Thumbnail Images */}
-              <div className="flex lg:flex-col gap-4">
-                {property.images.slice(1).map((image, idx) => (
-                  <div
-                    key={idx}
-                    className="relative h-24 lg:h-32 rounded-lg overflow-hidden bg-gray-200 flex-1"
-                  >
-                    <Image
-                      src={image}
-                      alt={`${property.title} ${idx + 2}`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
+          <div className="max-w-7xl mx-auto px-6 py-12">
+            <div
+              className="relative h-72 lg:h-96 rounded-2xl overflow-hidden flex flex-col items-center justify-center"
+              style={{
+                background: 'linear-gradient(145deg, #0a0a0f 0%, #1a1a24 50%, #0a0a0f 100%)',
+              }}
+            >
+              <div
+                className="absolute inset-0 opacity-25"
+                style={{
+                  background:
+                    'radial-gradient(ellipse at 70% 30%, #FF0000 0%, transparent 55%)',
+                }}
+              />
+              <span className="relative z-10 text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
+                {property.type}
+              </span>
+              <h1 className="relative z-10 text-3xl lg:text-5xl font-bold text-white text-center px-8">
+                {property.title}
+              </h1>
+              <p className="relative z-10 text-white/70 mt-3 text-lg">
+                📍 {property.location}
+              </p>
+              <div className="absolute top-6 right-6 bg-[#FF0000] text-white px-4 py-1.5 rounded-full text-sm font-semibold z-10">
+                {property.occupancyRate} occupied
               </div>
             </div>
           </div>
         </div>
 
-        {/* Content Section */}
+        {/* Content */}
         <div className="max-w-7xl mx-auto px-6 py-16 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Main Content */}
             <div className="lg:col-span-2">
-              {/* Header */}
               <div className="mb-12">
-                <h1 className="text-4xl lg:text-5xl font-bold text-black mb-4">
-                  {property.title}
-                </h1>
-                <p className="text-xl text-gray-600 mb-6">
-                  📍 {property.location}
-                </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   {property.description}
                 </p>
               </div>
 
-              {/* Highlights */}
               <div className="mb-12">
-                <h2 className="text-2xl font-bold text-black mb-6">
-                  Key Highlights
-                </h2>
+                <h2 className="text-2xl font-bold text-black mb-6">Key Highlights</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {property.highlights.map((highlight, idx) => (
                     <div key={idx} className="flex items-start gap-3">
@@ -445,61 +391,39 @@ export default async function PropertyDetailPage({
                 </div>
               </div>
 
-              {/* Key Metrics */}
               <div className="mb-12">
-                <h2 className="text-2xl font-bold text-black mb-6">
-                  Key Metrics
-                </h2>
+                <h2 className="text-2xl font-bold text-black mb-6">Key Metrics</h2>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                   {property.keyMetrics.map((metric, idx) => (
                     <div key={idx} className="bg-gray-50 p-6 rounded-xl">
-                      <p className="text-sm text-gray-600 font-medium mb-2">
-                        {metric.label}
-                      </p>
-                      <p className="text-2xl font-bold text-black">
-                        {metric.value}
-                      </p>
+                      <p className="text-sm text-gray-600 font-medium mb-2">{metric.label}</p>
+                      <p className="text-2xl font-bold text-black">{metric.value}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* About */}
               <div className="mb-12">
-                <h2 className="text-2xl font-bold text-black mb-6">
-                  About This Property
-                </h2>
-                <p className="text-gray-700 leading-relaxed">
-                  {property.about}
-                </p>
+                <h2 className="text-2xl font-bold text-black mb-6">About This Property</h2>
+                <p className="text-gray-700 leading-relaxed">{property.about}</p>
               </div>
 
-              {/* Investment Terms */}
               <div className="mb-12">
-                <h2 className="text-2xl font-bold text-black mb-6">
-                  Investment Terms
-                </h2>
+                <h2 className="text-2xl font-bold text-black mb-6">Investment Terms</h2>
                 <div className="bg-red-50 border border-red-100 rounded-xl p-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {property.investmentTerms.map((term, idx) => (
                       <div key={idx}>
-                        <p className="text-sm text-gray-600 font-medium mb-2">
-                          {term.label}
-                        </p>
-                        <p className="text-lg font-bold text-black">
-                          {term.value}
-                        </p>
+                        <p className="text-sm text-gray-600 font-medium mb-2">{term.label}</p>
+                        <p className="text-lg font-bold text-black">{term.value}</p>
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
 
-              {/* Risk Disclosure */}
               <div className="mb-12">
-                <h2 className="text-2xl font-bold text-black mb-6">
-                  Investment Risks
-                </h2>
+                <h2 className="text-2xl font-bold text-black mb-6">Investment Risks</h2>
                 <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
                   <ul className="space-y-3">
                     {property.risks.map((risk, idx) => (
@@ -513,34 +437,21 @@ export default async function PropertyDetailPage({
               </div>
             </div>
 
-            {/* Sidebar - Investment Card */}
+            {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="sticky top-32 bg-gray-50 rounded-2xl p-8 border border-gray-200">
-                {/* Price Section */}
                 <div className="mb-8">
-                  <p className="text-sm text-gray-600 font-medium mb-2">
-                    Property Valuation
-                  </p>
-                  <p className="text-3xl font-bold text-black mb-6">
-                    {property.valuation}
-                  </p>
+                  <p className="text-sm text-gray-600 font-medium mb-2">Property Valuation</p>
+                  <p className="text-3xl font-bold text-black mb-6">{property.valuation}</p>
 
                   <div className="space-y-4 mb-6 pb-6 border-b border-gray-300">
                     <div>
-                      <p className="text-xs text-gray-600 font-medium mb-1">
-                        Share Price
-                      </p>
-                      <p className="text-2xl font-bold text-black">
-                        {property.sharePrice}
-                      </p>
+                      <p className="text-xs text-gray-600 font-medium mb-1">Share Price</p>
+                      <p className="text-2xl font-bold text-black">{property.sharePrice}</p>
                     </div>
                     <div>
-                      <p className="text-xs text-gray-600 font-medium mb-1">
-                        Expected Annual Return
-                      </p>
-                      <p className="text-2xl font-bold text-green-600">
-                        {property.expectedReturn}
-                      </p>
+                      <p className="text-xs text-gray-600 font-medium mb-1">Expected Annual Return</p>
+                      <p className="text-2xl font-bold text-green-600">{property.expectedReturn}</p>
                     </div>
                   </div>
 
@@ -559,14 +470,11 @@ export default async function PropertyDetailPage({
                     </div>
                     <div className="flex justify-between">
                       <span className="text-gray-600">Occupancy</span>
-                      <span className="font-bold text-black">
-                        {property.occupancyRate}
-                      </span>
+                      <span className="font-bold text-black">{property.occupancyRate}</span>
                     </div>
                   </div>
                 </div>
 
-                {/* Investment Progress */}
                 <div className="mb-8">
                   <div className="flex justify-between text-xs mb-2">
                     <span className="text-gray-600">Funding Progress</span>
@@ -589,20 +497,15 @@ export default async function PropertyDetailPage({
                   </div>
                 </div>
 
-                {/* CTA Button */}
                 <button className="w-full px-6 py-4 bg-[#FF0000] text-white font-semibold rounded-full hover:bg-[#CC0000] transition-colors mb-4">
                   Invest Now
                 </button>
-
-                {/* Secondary CTA */}
                 <button className="w-full px-6 py-3 bg-gray-200 text-black font-semibold rounded-full hover:bg-gray-300 transition-colors mb-6">
                   Learn More
                 </button>
-
-                {/* Disclaimer */}
                 <p className="text-xs text-gray-600 text-center">
-                  Past performance is not indicative of future results. Please
-                  review our risk disclosure before investing.
+                  Past performance is not indicative of future results. Please review our risk
+                  disclosure before investing.
                 </p>
               </div>
             </div>
