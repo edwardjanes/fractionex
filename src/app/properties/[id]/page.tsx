@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Navbar } from '@/components/Navbar';
 import { RiskWarningBanner } from '@/components/RiskWarningBanner';
 import { Footer } from '@/components/Footer';
@@ -27,6 +28,7 @@ const PROPERTY_DATA: Record<
     title: string;
     location: string;
     type: string;
+    image?: string;
     valuation: string;
     expectedReturn: string;
     sharePrice: string;
@@ -86,6 +88,7 @@ const PROPERTY_DATA: Record<
     title: 'Residential Complex',
     location: 'Manchester, UK',
     type: 'Residential',
+    image: '/images/properties/residential-manchester.jpg',
     valuation: '£28.5M',
     expectedReturn: '6.8%',
     sharePrice: '£180',
@@ -325,7 +328,6 @@ export default async function PropertyDetailPage({
       <RiskWarningBanner />
 
       <main className="flex flex-col">
-        {/* Breadcrumb */}
         <div className="max-w-7xl mx-auto px-6 py-6 w-full">
           <Link
             href="/properties"
@@ -335,34 +337,63 @@ export default async function PropertyDetailPage({
           </Link>
         </div>
 
-        {/* Visual header — branded placeholder (no Coinbase images) */}
+        {/* Hero visual */}
         <div className="w-full bg-gray-100">
           <div className="max-w-7xl mx-auto px-6 py-12">
-            <div
-              className="relative h-72 lg:h-96 rounded-2xl overflow-hidden flex flex-col items-center justify-center"
-              style={{
-                background: 'linear-gradient(145deg, #0a0a0f 0%, #1a1a24 50%, #0a0a0f 100%)',
-              }}
-            >
-              <div
-                className="absolute inset-0 opacity-25"
-                style={{
-                  background:
-                    'radial-gradient(ellipse at 70% 30%, #FF0000 0%, transparent 55%)',
-                }}
-              />
-              <span className="relative z-10 text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
-                {property.type}
-              </span>
-              <h1 className="relative z-10 text-3xl lg:text-5xl font-bold text-white text-center px-8">
-                {property.title}
-              </h1>
-              <p className="relative z-10 text-white/70 mt-3 text-lg">
-                📍 {property.location}
-              </p>
-              <div className="absolute top-6 right-6 bg-[#FF0000] text-white px-4 py-1.5 rounded-full text-sm font-semibold z-10">
-                {property.occupancyRate} occupied
-              </div>
+            <div className="relative h-72 lg:h-96 rounded-2xl overflow-hidden">
+              {property.image ? (
+                <>
+                  <Image
+                    src={property.image}
+                    alt={property.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1280px) 100vw, 1280px"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6 z-10">
+                    <span className="text-white/80 text-sm font-semibold tracking-widest uppercase">
+                      {property.type}
+                    </span>
+                    <h1 className="text-3xl lg:text-4xl font-bold text-white mt-1">
+                      {property.title}
+                    </h1>
+                    <p className="text-white/80 mt-1">📍 {property.location}</p>
+                  </div>
+                  <div className="absolute top-6 right-6 bg-[#FF0000] text-white px-4 py-1.5 rounded-full text-sm font-semibold z-10">
+                    {property.occupancyRate} occupied
+                  </div>
+                </>
+              ) : (
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center"
+                  style={{
+                    background:
+                      'linear-gradient(145deg, #0a0a0f 0%, #1a1a24 50%, #0a0a0f 100%)',
+                  }}
+                >
+                  <div
+                    className="absolute inset-0 opacity-25"
+                    style={{
+                      background:
+                        'radial-gradient(ellipse at 70% 30%, #FF0000 0%, transparent 55%)',
+                    }}
+                  />
+                  <span className="relative z-10 text-white/60 text-sm font-semibold tracking-widest uppercase mb-3">
+                    {property.type}
+                  </span>
+                  <h1 className="relative z-10 text-3xl lg:text-5xl font-bold text-white text-center px-8">
+                    {property.title}
+                  </h1>
+                  <p className="relative z-10 text-white/70 mt-3 text-lg">
+                    📍 {property.location}
+                  </p>
+                  <div className="absolute top-6 right-6 bg-[#FF0000] text-white px-4 py-1.5 rounded-full text-sm font-semibold z-10">
+                    {property.occupancyRate} occupied
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -372,9 +403,7 @@ export default async function PropertyDetailPage({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <div className="mb-12">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {property.description}
-                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">{property.description}</p>
               </div>
 
               <div className="mb-12">
@@ -437,7 +466,6 @@ export default async function PropertyDetailPage({
               </div>
             </div>
 
-            {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="sticky top-32 bg-gray-50 rounded-2xl p-8 border border-gray-200">
                 <div className="mb-8">
