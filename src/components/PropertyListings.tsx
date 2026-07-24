@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface Property {
   id: string;
@@ -13,6 +14,7 @@ interface Property {
   sharesAvailable: number;
   occupancyRate: string;
   type: string;
+  image?: string;
 }
 
 const FEATURED_PROPERTIES: Property[] = [
@@ -37,6 +39,7 @@ const FEATURED_PROPERTIES: Property[] = [
     sharesAvailable: 1500,
     occupancyRate: '88%',
     type: 'Residential',
+    image: '/images/properties/residential-manchester.jpg',
   },
   {
     id: '3',
@@ -97,17 +100,16 @@ export function PropertyListings(): React.ReactElement {
   return (
     <section className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-6 py-20">
-        {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Featured Properties
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our curated selection of premium real estate opportunities across the UK. Each property is carefully vetted and offers attractive returns for fractional investors.
+            Explore our curated selection of premium real estate opportunities across the UK. Each
+            property is carefully vetted and offers attractive returns for fractional investors.
           </p>
         </div>
 
-        {/* Filter Bar */}
         <div className="mb-12 flex flex-wrap gap-3 justify-center">
           <button className="px-6 py-2 bg-[#FF0000] text-white text-sm font-medium rounded-full hover:bg-[#CC0000] transition-colors">
             All Properties
@@ -126,39 +128,50 @@ export function PropertyListings(): React.ReactElement {
           </button>
         </div>
 
-        {/* Properties Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {FEATURED_PROPERTIES.map((property, idx) => (
             <div
               key={property.id}
               className="rounded-2xl overflow-hidden bg-white border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300 group"
             >
-              {/* Visual placeholder (no Coinbase images) */}
-              <div
-                className={`relative h-64 overflow-hidden bg-gradient-to-br ${GRADIENTS[idx % GRADIENTS.length]} flex flex-col items-center justify-center`}
-              >
-                <div className="absolute inset-0 opacity-30" style={{
-                  background: 'radial-gradient(ellipse at 30% 20%, #FF0000 0%, transparent 50%)'
-                }} />
-                <span className="relative z-10 text-white/90 text-sm font-semibold tracking-widest uppercase mb-2">
-                  {property.type}
-                </span>
-                <span className="relative z-10 text-white text-xl font-bold text-center px-6 leading-tight">
-                  {property.title}
-                </span>
+              {/* Image or gradient placeholder */}
+              <div className="relative h-64 overflow-hidden bg-gray-200">
+                {property.image ? (
+                  <Image
+                    src={property.image}
+                    alt={property.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                ) : (
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${GRADIENTS[idx % GRADIENTS.length]} flex flex-col items-center justify-center`}
+                  >
+                    <div
+                      className="absolute inset-0 opacity-30"
+                      style={{
+                        background:
+                          'radial-gradient(ellipse at 30% 20%, #FF0000 0%, transparent 50%)',
+                      }}
+                    />
+                    <span className="relative z-10 text-white/90 text-sm font-semibold tracking-widest uppercase mb-2">
+                      {property.type}
+                    </span>
+                    <span className="relative z-10 text-white text-xl font-bold text-center px-6 leading-tight">
+                      {property.title}
+                    </span>
+                  </div>
+                )}
+
                 <div className="absolute top-4 right-4 bg-[#FF0000] text-white px-3 py-1 rounded-full text-xs font-semibold z-10">
                   {property.occupancyRate} occupied
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-black mb-2">
-                  {property.title}
-                </h3>
-                <p className="text-sm text-gray-600 mb-6">
-                  📍 {property.location}
-                </p>
+                <h3 className="text-xl font-bold text-black mb-2">{property.title}</h3>
+                <p className="text-sm text-gray-600 mb-6">📍 {property.location}</p>
 
                 <div className="grid grid-cols-2 gap-4 mb-6 pb-6 border-b border-gray-200">
                   <div>
