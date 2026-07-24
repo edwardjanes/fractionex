@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeroSectionProps {
   headline?: string;
@@ -9,8 +10,6 @@ interface HeroSectionProps {
   description?: string;
   ctaText?: string;
   ctaHref?: string;
-  videoSrc?: string;
-  posterImage?: string;
 }
 
 export function HeroSection({
@@ -19,8 +18,6 @@ export function HeroSection({
   description = 'Fractionex lets you buy, hold, and trade fractional shares of real property — fully regulated, fully transparent, and fully yours.',
   ctaText = 'Start Investing',
   ctaHref = '/signup',
-  videoSrc = '/images/coinbase/hero-video.webm',
-  posterImage,
 }: HeroSectionProps): React.ReactElement {
   return (
     <section className="bg-white">
@@ -92,33 +89,60 @@ export function HeroSection({
             </div>
           </div>
 
+          {/* Branded visual panel — no Coinbase video */}
           <div className="order-2 flex justify-center lg:justify-end">
             <div
-              className="relative flex items-center justify-center rounded-[2.5rem] overflow-hidden"
+              className="relative flex flex-col items-center justify-center rounded-[2.5rem] overflow-hidden"
               style={{
-                backgroundColor: '#0a0a0f',
+                background: 'linear-gradient(145deg, #0a0a0f 0%, #1a1a24 50%, #0a0a0f 100%)',
                 width: '100%',
                 maxWidth: '480px',
                 aspectRatio: '1 / 1.05',
+                border: '1px solid rgba(255,255,255,0.08)',
               }}
             >
-              {videoSrc ? (
-                <video
-                  className="absolute inset-0 w-full h-full object-cover"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  poster={posterImage}
-                  aria-hidden="true"
-                >
-                  <source src={videoSrc} type="video/webm" />
-                </video>
-              ) : (
-                <div className="relative z-10 text-center px-8">
-                  <p className="text-white/40 text-sm">Property visual</p>
+              {/* Subtle red accent glow */}
+              <div
+                className="absolute inset-0 opacity-20"
+                style={{
+                  background:
+                    'radial-gradient(ellipse at 70% 20%, #FF0000 0%, transparent 55%)',
+                }}
+              />
+
+              <div className="relative z-10 flex flex-col items-center px-10 text-center">
+                <Image
+                  src="/images/logo-white.png"
+                  alt="Fractionex"
+                  width={160}
+                  height={40}
+                  className="mb-8 opacity-90"
+                  priority
+                />
+
+                <p className="text-white/70 text-sm font-medium tracking-wide mb-6">
+                  Fractional ownership of real UK property
+                </p>
+
+                <div className="grid grid-cols-2 gap-6 w-full max-w-[280px]">
+                  <div className="text-left">
+                    <p className="text-2xl font-bold text-white">£10</p>
+                    <p className="text-xs text-white/50 mt-1">Minimum invest</p>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-2xl font-bold text-white">ERC-3643</p>
+                    <p className="text-xs text-white/50 mt-1">Regulated tokens</p>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-2xl font-bold text-white">7%+</p>
+                    <p className="text-xs text-white/50 mt-1">Target yields</p>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-2xl font-bold text-white">UK</p>
+                    <p className="text-xs text-white/50 mt-1">Real assets</p>
+                  </div>
                 </div>
-              )}
+              </div>
             </div>
           </div>
         </div>

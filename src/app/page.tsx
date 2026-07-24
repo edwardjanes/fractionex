@@ -30,7 +30,6 @@ export default function Home() {
           description="Fractionex lets you buy, hold, and trade fractional shares of real property — fully regulated, fully transparent, and fully yours."
           ctaText="Start Investing"
           ctaHref="/signup"
-          videoSrc="/images/coinbase/hero-video.webm"
         />
 
         <TrustStrip />
