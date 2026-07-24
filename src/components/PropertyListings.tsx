@@ -102,7 +102,7 @@ export function PropertyListings(): React.ReactElement {
 
         {/* Filter Bar */}
         <div className="mb-12 flex flex-wrap gap-3 justify-center">
-          <button className="px-6 py-2 bg-blue-600 text-white text-sm font-medium rounded-full hover:bg-blue-700 transition-colors">
+          <button className="px-6 py-2 bg-[#FF0000] text-white text-sm font-medium rounded-full hover:bg-[#CC0000] transition-colors">
             All Properties
           </button>
           <button className="px-6 py-2 bg-gray-100 text-gray-700 text-sm font-medium rounded-full hover:bg-gray-200 transition-colors">
@@ -124,7 +124,7 @@ export function PropertyListings(): React.ReactElement {
           {FEATURED_PROPERTIES.map((property) => (
             <div
               key={property.id}
-              className="rounded-2xl overflow-hidden bg-white border border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300 group"
+              className="rounded-2xl overflow-hidden bg-white border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300 group"
             >
               {/* Image Container */}
               <div className="relative h-64 overflow-hidden bg-gray-200">
@@ -134,7 +134,7 @@ export function PropertyListings(): React.ReactElement {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
+                <div className="absolute top-4 right-4 bg-[#FF0000] text-white px-3 py-1 rounded-full text-xs font-semibold">
                   {property.occupancyRate} occupied
                 </div>
               </div>
@@ -188,7 +188,7 @@ export function PropertyListings(): React.ReactElement {
                 {/* CTA Button */}
                 <Link
                   href={`/properties/${property.id}`}
-                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors"
+                  className="w-full inline-flex items-center justify-center px-6 py-3 bg-[#FF0000] text-white font-semibold rounded-full hover:bg-[#CC0000] transition-colors"
                 >
                   Invest Now
                 </Link>
@@ -202,9 +202,12 @@ export function PropertyListings(): React.ReactElement {
           <p className="text-gray-600 mb-6">
             Viewing {FEATURED_PROPERTIES.length} of many available properties
           </p>
-          <button className="px-8 py-4 bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-200 transition-colors">
+          <Link
+            href="/properties"
+            className="inline-flex px-8 py-4 bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-200 transition-colors"
+          >
             View All Properties
-          </button>
+          </Link>
         </div>
       </div>
     </section>

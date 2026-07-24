@@ -1,13 +1,10 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 export function RiskWarningBanner(): React.ReactNode {
-  const handleLearnMoreClick = (e: React.MouseEvent<HTMLAnchorElement>): void => {
-    e.preventDefault();
-  };
-
   return (
     <div
       className={cn(
@@ -28,9 +25,8 @@ export function RiskWarningBanner(): React.ReactNode {
       >
         Don&apos;t invest unless you&apos;re prepared to lose all the money you invest. This is a
         high-risk investment and you should not expect to be protected if something goes wrong.{' '}
-        <a
-          href="#/about/risks"
-          onClick={handleLearnMoreClick}
+        <Link
+          href="/how-it-works"
           className={cn(
             'text-primary underline',
             'transition-colors duration-200 ease-in-out',
@@ -40,7 +36,7 @@ export function RiskWarningBanner(): React.ReactNode {
           )}
         >
           Take 2 mins to learn more
-        </a>
+        </Link>
       </p>
     </div>
   );

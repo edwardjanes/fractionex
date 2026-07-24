@@ -10,8 +10,6 @@ import { DifferentiationSection } from '@/components/DifferentiationSection';
 import { PropertyListings } from '@/components/PropertyListings';
 import { OwnerDeveloperStrip } from '@/components/OwnerDeveloperStrip';
 import { FinalCTASection } from '@/components/FinalCTASection';
-import { FeaturesCarousel } from '@/components/FeaturesCarousel';
-import { CryptoAssetsGrid } from '@/components/CryptoAssetsGrid';
 import { TrustSection } from '@/components/TrustSection';
 import { Footer } from '@/components/Footer';
 
@@ -44,8 +42,6 @@ export default function Home() {
         <PropertyListings />
         <OwnerDeveloperStrip />
         <FinalCTASection />
-        <FeaturesCarousel />
-        <CryptoAssetsGrid />
         <TrustSection />
       </main>
 
