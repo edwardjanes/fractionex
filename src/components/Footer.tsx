@@ -110,9 +110,9 @@ export function Footer(): React.ReactElement {
                 <Image
                   src="/images/logo-white.png"
                   alt="Fractionex"
-                  width={200}
-                  height={50}
-                  className="h-[50px] w-auto"
+                  width={125}
+                  height={32}
+                  className="w-[125px] h-auto"
                 />
               </Link>
               <p className="text-sm leading-relaxed max-w-xs mb-5" style={{ color: '#9ca3af' }}>
