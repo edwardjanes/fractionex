@@ -6,19 +6,16 @@ import { Footer } from '@/components/Footer';
 export default function About() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <Navbar />
 
-      {/* Main Content */}
-      <main className="flex flex-col">
-        {/* Risk Warning Banner */}
-        <RiskWarningBanner />
+      {/* Offset for fixed 69px nav */}
+      <div style={{ height: '69px' }} />
 
-        {/* About Page Content */}
+      <main className="flex flex-col">
+        <RiskWarningBanner />
         <AboutPageContent />
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

@@ -7,22 +7,17 @@ import { Footer } from '@/components/Footer';
 export default function Properties() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <Navbar />
 
-      {/* Main Content */}
+      {/* Offset for fixed 69px nav */}
+      <div style={{ height: '69px' }} />
+
       <main className="flex flex-col">
-        {/* Risk Warning Banner */}
         <RiskWarningBanner />
-
-        {/* Property Listings */}
         <PropertyListings />
-
-        {/* Trust Section */}
         <TrustSection />
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
