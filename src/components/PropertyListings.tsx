@@ -39,7 +39,7 @@ const FEATURED_PROPERTIES: Property[] = [
     sharesAvailable: 1500,
     occupancyRate: '88%',
     type: 'Residential',
-    image: '/images/properties/residential-manchester.jpg',
+    image: '/images/residential-manchester.jpg',
   },
   {
     id: '3',
@@ -134,7 +134,6 @@ export function PropertyListings(): React.ReactElement {
               key={property.id}
               className="rounded-2xl overflow-hidden bg-white border border-gray-200 hover:border-red-300 hover:shadow-lg transition-all duration-300 group"
             >
-              {/* Image or gradient placeholder */}
               <div className="relative h-64 overflow-hidden bg-gray-200">
                 {property.image ? (
                   <Image
