@@ -9,15 +9,14 @@ import { Footer } from '@/components/Footer';
 export default function Security() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <Navbar />
 
-      {/* Main Content */}
+      {/* Offset for fixed 69px nav */}
+      <div style={{ height: '69px' }} />
+
       <main className="flex flex-col">
-        {/* Risk Warning Banner */}
         <RiskWarningBanner />
 
-        {/* Hero Section */}
         <HeroSection
           headline="Security & Protection"
           subheading="Learn how Fractionex protects your investments and personal data."
@@ -27,17 +26,11 @@ export default function Security() {
           videoSrc="/images/coinbase/hero-video.webm"
         />
 
-        {/* Features Carousel */}
         <FeaturesCarousel />
-
-        {/* Crypto Assets Grid */}
         <CryptoAssetsGrid />
-
-        {/* Trust Section */}
         <TrustSection />
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

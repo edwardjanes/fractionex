@@ -65,7 +65,7 @@ const PROPERTY_DATA: Record<
     sharesTotal: 18080,
     occupancyRate: '92%',
     description:
-      'A prime Grade A office building located in the heart of London\'s financial district, offering state-of-the-art facilities and exceptional investment returns.',
+      "A prime Grade A office building located in the heart of London's financial district, offering state-of-the-art facilities and exceptional investment returns.",
     highlights: [
       'Grade A office space',
       'London West End location',
@@ -81,7 +81,7 @@ const PROPERTY_DATA: Record<
       { label: 'Year Built', value: '1998' },
     ],
     about:
-      'This premium office tower represents a significant investment opportunity in one of London\'s most sought-after commercial real estate markets. The property features modern amenities, flexible floor plates, and a diverse tenant base including multinational corporations and professional services firms.',
+      "This premium office tower represents a significant investment opportunity in one of London's most sought-after commercial real estate markets. The property features modern amenities, flexible floor plates, and a diverse tenant base including multinational corporations and professional services firms.",
     investmentTerms: [
       { label: 'Minimum Investment', value: '£250 (1 share)' },
       { label: 'Investment Horizon', value: '5-10 years' },
@@ -126,7 +126,7 @@ const PROPERTY_DATA: Record<
       { label: 'Year Built', value: '2015' },
     ],
     about:
-      'A vibrant residential complex strategically positioned in Manchester\'s regenerated city centre. The property combines residential apartments with ground-floor commercial space, creating a mixed-use community hub with excellent rental yields.',
+      "A vibrant residential complex strategically positioned in Manchester's regenerated city centre. The property combines residential apartments with ground-floor commercial space, creating a mixed-use community hub with excellent rental yields.",
     investmentTerms: [
       { label: 'Minimum Investment', value: '£180 (1 share)' },
       { label: 'Investment Horizon', value: '7-12 years' },
@@ -200,7 +200,7 @@ const PROPERTY_DATA: Record<
     sharesTotal: 16651,
     occupancyRate: '90%',
     description:
-      'Exclusive luxury apartment development in Edinburgh\'s prestigious West End, targeting high-net-worth individuals and corporate housing.',
+      "Exclusive luxury apartment development in Edinburgh's prestigious West End, targeting high-net-worth individuals and corporate housing.",
     highlights: [
       'Luxury finishes',
       'Premium location',
@@ -216,7 +216,7 @@ const PROPERTY_DATA: Record<
       { label: 'Year Built', value: '2019' },
     ],
     about:
-      'An ultra-modern luxury apartment development in one of Edinburgh\'s most desirable neighbourhoods. Featuring penthouses, duplexes, and premium apartments with concierge services and bespoke finishes targeting affluent investors and executives.',
+      "An ultra-modern luxury apartment development in one of Edinburgh's most desirable neighbourhoods. Featuring penthouses, duplexes, and premium apartments with concierge services and bespoke finishes targeting affluent investors and executives.",
     investmentTerms: [
       { label: 'Minimum Investment', value: '£215 (1 share)' },
       { label: 'Investment Horizon', value: '7-10 years' },
@@ -245,7 +245,7 @@ const PROPERTY_DATA: Record<
     sharesTotal: 14474,
     occupancyRate: '87%',
     description:
-      'Modern business park in Bristol hosting tech companies and professional services firms, benefiting from the city\'s tech hub status.',
+      "Modern business park in Bristol hosting tech companies and professional services firms, benefiting from the city's tech hub status.",
     highlights: [
       'Tech hub location',
       'Modern facilities',
@@ -261,7 +261,7 @@ const PROPERTY_DATA: Record<
       { label: 'Year Built', value: '2010' },
     ],
     about:
-      'A contemporary business park ideally positioned in Bristol\'s burgeoning tech corridor. The property attracts innovative companies, scale-ups, and established professional services firms, all benefiting from the city\'s reputation as a tech hub.',
+      "A contemporary business park ideally positioned in Bristol's burgeoning tech corridor. The property attracts innovative companies, scale-ups, and established professional services firms, all benefiting from the city's reputation as a tech hub.",
     investmentTerms: [
       { label: 'Minimum Investment', value: '£285 (1 share)' },
       { label: 'Investment Horizon', value: '6-9 years' },
@@ -306,7 +306,7 @@ const PROPERTY_DATA: Record<
       { label: 'Year Built', value: '2012' },
     ],
     about:
-      'A premium hotel and leisure complex offering 250+ rooms, conference facilities, and leisure amenities. Positioned at the heart of Liverpool\'s cultural and business district, capitalizing on strong tourism growth and business travel.',
+      "A premium hotel and leisure complex offering 250+ rooms, conference facilities, and leisure amenities. Positioned at the heart of Liverpool's cultural and business district, capitalizing on strong tourism growth and business travel.",
     investmentTerms: [
       { label: 'Minimum Investment', value: '£195 (1 share)' },
       { label: 'Investment Horizon', value: '5-8 years' },
@@ -332,6 +332,8 @@ export default async function PropertyDetailPage({
     return (
       <div className="min-h-screen bg-white">
         <Navbar />
+        {/* Offset for fixed 69px nav */}
+        <div style={{ height: '69px' }} />
         <RiskWarningBanner />
         <main className="flex flex-col items-center justify-center min-h-[60vh]">
           <h1 className="text-3xl font-bold text-black mb-4">
@@ -342,7 +344,7 @@ export default async function PropertyDetailPage({
           </p>
           <Link
             href="/properties"
-            className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors"
+            className="px-8 py-3 bg-[#FF0000] text-white font-semibold rounded-full hover:bg-[#CC0000] transition-colors"
           >
             Back to Properties
           </Link>
@@ -355,6 +357,10 @@ export default async function PropertyDetailPage({
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
+
+      {/* Offset for fixed 69px nav */}
+      <div style={{ height: '69px' }} />
+
       <RiskWarningBanner />
 
       <main className="flex flex-col">
@@ -362,7 +368,7 @@ export default async function PropertyDetailPage({
         <div className="max-w-7xl mx-auto px-6 py-6 w-full">
           <Link
             href="/properties"
-            className="text-blue-600 hover:text-blue-700 font-medium"
+            className="text-[#FF0000] hover:text-[#CC0000] font-medium"
           >
             ← Back to Properties
           </Link>
@@ -430,7 +436,7 @@ export default async function PropertyDetailPage({
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {property.highlights.map((highlight, idx) => (
                     <div key={idx} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center mt-1">
+                      <div className="flex-shrink-0 w-6 h-6 bg-[#FF0000] rounded-full flex items-center justify-center mt-1">
                         <span className="text-white text-sm font-bold">✓</span>
                       </div>
                       <p className="text-gray-700">{highlight}</p>
@@ -473,7 +479,7 @@ export default async function PropertyDetailPage({
                 <h2 className="text-2xl font-bold text-black mb-6">
                   Investment Terms
                 </h2>
-                <div className="bg-blue-50 border border-blue-200 rounded-xl p-8">
+                <div className="bg-red-50 border border-red-100 rounded-xl p-8">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {property.investmentTerms.map((term, idx) => (
                       <div key={idx}>
@@ -575,7 +581,7 @@ export default async function PropertyDetailPage({
                   </div>
                   <div className="w-full bg-gray-300 rounded-full h-2">
                     <div
-                      className="bg-blue-600 h-2 rounded-full"
+                      className="bg-[#FF0000] h-2 rounded-full"
                       style={{
                         width: `${((property.sharesTotal - property.sharesAvailable) / property.sharesTotal) * 100}%`,
                       }}
@@ -584,7 +590,7 @@ export default async function PropertyDetailPage({
                 </div>
 
                 {/* CTA Button */}
-                <button className="w-full px-6 py-4 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors mb-4">
+                <button className="w-full px-6 py-4 bg-[#FF0000] text-white font-semibold rounded-full hover:bg-[#CC0000] transition-colors mb-4">
                   Invest Now
                 </button>
 
