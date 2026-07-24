@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
 
 interface HeroSectionProps {
   headline?: string;
@@ -15,146 +14,120 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({
-  headline = 'The most trusted crypto trading app',
-  subheading = 'Coinbase is the most trusted platform in the UK for buying, selling and trading crypto.',
-  description = 'Deposit GBP into your account for free to get started today',
-  ctaText = 'Sign up',
+  headline = 'The most trusted way to own real estate',
+  subheading = 'Fractionex is the most trusted platform for fractional real estate investing through tokenisation.',
+  description = 'Fractionex lets you buy, hold, and trade fractional shares of real property — fully regulated, fully transparent, and fully yours.',
+  ctaText = 'Start Investing',
   ctaHref = '/signup',
-  videoSrc = '/videos/hero-bg.webm',
+  videoSrc = '/images/coinbase/hero-video.webm',
   posterImage,
 }: HeroSectionProps): React.ReactElement {
   return (
-    <section
-      className={cn(
-        'hero-section',
-        'relative w-full overflow-hidden bg-white',
-        'flex items-center justify-start',
-      )}
-      role="region"
-      aria-label="Hero section with background video"
-    >
-      {/* Background Video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster={posterImage}
-        aria-hidden="true"
+    <section className="bg-white">
+      {/* Spacer for fixed nav (69px) */}
+      <div style={{ height: '69px' }} />
+
+      <div
+        className="mx-auto"
+        style={{
+          maxWidth: '1600px',
+          paddingLeft: '32px',
+          paddingRight: '32px',
+          paddingTop: '64px',
+          paddingBottom: '64px',
+        }}
       >
-        <source src={videoSrc} type="video/webm" />
-        Your browser does not support the video tag.
-      </video>
+        <div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          style={{ minHeight: 'calc(900px - 69px - 128px)' }}
+        >
+          {/* Left: copy — existing content preserved */}
+          <div className="text-center lg:text-left order-1 max-w-[640px] mx-auto lg:mx-0">
+            <h1
+              className="font-bold tracking-tight text-black mb-6"
+              style={{
+                fontSize: 'clamp(40px, 5vw, 80px)',
+                lineHeight: 1.05,
+                letterSpacing: '-0.02em',
+              }}
+            >
+              {headline}
+            </h1>
 
-      {/* Content Wrapper */}
-      <div className="hero-content relative z-10 w-full">
-        <div className="hero-content-inner">
-          {/* Headline */}
-          <h1 className="hero-headline font-bold text-black font-sans leading-tight tracking-normal">
-            {headline}
-          </h1>
+            <p
+              className="text-gray-600 leading-relaxed mb-4"
+              style={{ fontSize: '18px', lineHeight: 1.55 }}
+            >
+              {subheading}
+            </p>
 
-          {/* Subheading */}
-          <p className="hero-subheading text-black font-normal">
-            {subheading}
-          </p>
+            <p
+              className="text-gray-500 mb-10"
+              style={{ fontSize: '16px', lineHeight: 1.5 }}
+            >
+              {description}
+            </p>
 
-          {/* Description */}
-          <p className="hero-description text-black font-normal">
-            {description}
-          </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+              <Link
+                href={ctaHref}
+                className="inline-flex items-center justify-center text-white font-semibold rounded-full transition-colors"
+                style={{
+                  fontSize: '16px',
+                  padding: '14px 32px',
+                  backgroundColor: '#FF0000',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#CC0000';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#FF0000';
+                }}
+              >
+                {ctaText}
+              </Link>
+              <Link
+                href="/how-it-works"
+                className="inline-flex items-center justify-center font-semibold text-gray-800 rounded-full border border-gray-300 hover:border-gray-400 transition-colors"
+                style={{ fontSize: '16px', padding: '14px 32px' }}
+              >
+                How it works
+              </Link>
+            </div>
+          </div>
 
-          {/* CTA Button */}
-          <div className="flex justify-start">
-            <Link href={ctaHref} className="hero-cta-button inline-block no-underline">
-              {ctaText}
-            </Link>
+          {/* Right: visual panel (video if available, else solid brand panel) */}
+          <div className="order-2 flex justify-center lg:justify-end">
+            <div
+              className="relative flex items-center justify-center rounded-[2.5rem] overflow-hidden"
+              style={{
+                backgroundColor: '#0a0a0f',
+                width: '100%',
+                maxWidth: '480px',
+                aspectRatio: '1 / 1.05',
+              }}
+            >
+              {videoSrc ? (
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster={posterImage}
+                  aria-hidden="true"
+                >
+                  <source src={videoSrc} type="video/webm" />
+                </video>
+              ) : (
+                <div className="relative z-10 text-center px-8">
+                  <p className="text-white/40 text-sm">Property visual</p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Styling */}
-      <style jsx>{`
-        .hero-section {
-          min-height: 100vh;
-        }
-
-        @media (max-width: 767px) {
-          .hero-section {
-            min-height: 600px;
-            max-height: 700px;
-          }
-        }
-
-        .hero-content {
-          padding: 80px 40px;
-          margin: 0 auto;
-          max-width: 1400px;
-          width: 100%;
-        }
-
-        @media (max-width: 767px) {
-          .hero-content {
-            padding: 40px 20px;
-          }
-        }
-
-        .hero-content-inner {
-          max-width: 600px;
-        }
-
-        .hero-headline {
-          font-size: 48px;
-          line-height: 1.2;
-          margin-bottom: 24px;
-        }
-
-        @media (max-width: 767px) {
-          .hero-headline {
-            font-size: 32px;
-          }
-        }
-
-        .hero-subheading {
-          font-size: 18px;
-          line-height: 1.5;
-          margin-bottom: 16px;
-        }
-
-        .hero-description {
-          font-size: 16px;
-          line-height: 1.5;
-          margin-bottom: 32px;
-        }
-
-        .hero-cta-button {
-          background-color: #FF0000;
-          color: #ffffff;
-          padding: 12px 28px;
-          border-radius: 24px;
-          font-size: 16px;
-          font-weight: 600;
-          text-decoration: none;
-          display: inline-block;
-          border: none;
-          cursor: pointer;
-          transition: background-color 200ms ease;
-        }
-
-        .hero-cta-button:hover {
-          background-color: #CC0000;
-        }
-
-        .hero-cta-button:focus {
-          outline: 2px solid #FF0000;
-          outline-offset: 2px;
-        }
-
-        .hero-cta-button:active {
-          background-color: #990000;
-        }
-      `}</style>
     </section>
   );
 }
