@@ -12,7 +12,7 @@ export function TrustStrip(): React.ReactElement {
               Regulated structure
             </p>
             <p className="text-xs text-gray-600">
-              [CONFIRM: REGULATOR / STRUCTURE NAME]
+              Ring-fenced, regulated securitisation compartments
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export function TrustStrip(): React.ReactElement {
               Independently audited
             </p>
             <p className="text-xs text-gray-600">
-              [CONFIRM: AUDIT FIRM NAME]
+              Smart contracts and financial reporting subject to independent review
             </p>
           </div>
 

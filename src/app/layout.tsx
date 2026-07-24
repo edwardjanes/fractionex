@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://fractionex.com",
+    url: "https://fractionex.io",
     siteName: "Fractionex",
     title: "Fractionex - Fractional Property Investment & Exchange",
     description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange.",
