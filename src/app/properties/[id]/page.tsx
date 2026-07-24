@@ -88,7 +88,7 @@ const PROPERTY_DATA: Record<
     title: 'Residential Complex',
     location: 'Manchester, UK',
     type: 'Residential',
-    image: '/images/properties/residential-manchester.jpg',
+    image: '/images/residential-manchester.jpg',
     valuation: '£28.5M',
     expectedReturn: '6.8%',
     sharePrice: '£180',
