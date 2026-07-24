@@ -11,12 +11,11 @@ export function RiskWarningBanner(): React.ReactNode {
   return (
     <div
       className={cn(
-        'sticky z-40 w-full',
+        'w-full',
         'bg-secondary border-b border-border',
         'flex items-center justify-center',
         'py-3 px-6',
       )}
-      style={{ top: '69px' }}
     >
       <p
         className={cn(

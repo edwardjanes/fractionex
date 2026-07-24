@@ -24,16 +24,13 @@ export function HeroSection({
 }: HeroSectionProps): React.ReactElement {
   return (
     <section className="bg-white">
-      {/* Spacer for fixed nav (69px) */}
-      <div style={{ height: '69px' }} />
-
       <div
         className="mx-auto"
         style={{
           maxWidth: '1600px',
           paddingLeft: '32px',
           paddingRight: '32px',
-          paddingTop: '64px',
+          paddingTop: '48px',
           paddingBottom: '64px',
         }}
       >
@@ -41,7 +38,6 @@ export function HeroSection({
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
           style={{ minHeight: 'calc(900px - 69px - 128px)' }}
         >
-          {/* Left: copy — existing content preserved */}
           <div className="text-center lg:text-left order-1 max-w-[640px] mx-auto lg:mx-0">
             <h1
               className="font-bold tracking-tight text-black mb-6"
@@ -96,7 +92,6 @@ export function HeroSection({
             </div>
           </div>
 
-          {/* Right: visual panel (video if available, else solid brand panel) */}
           <div className="order-2 flex justify-center lg:justify-end">
             <div
               className="relative flex items-center justify-center rounded-[2.5rem] overflow-hidden"
