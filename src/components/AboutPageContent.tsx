@@ -99,20 +99,20 @@ export function AboutPageContent(): React.ReactElement {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Team Member 1 */}
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
-              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600">
-                [PHOTO]
+              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600 text-xl font-semibold">
+                EJ
               </div>
               <h3 className="text-lg font-bold text-black mb-1">
                 Edward Janes
               </h3>
               <p className="text-sm text-blue-600 font-semibold mb-3">
-                [CONFIRM TITLE]
+                Founder
               </p>
               <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                [Expand with 1 specific, verifiable company/outcome]
+                Building Fractionex alongside Source Capital, where he advises founders on fundraising strategy and market selection.
               </p>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/edward-janes"
                 className="text-blue-600 hover:text-blue-700 text-sm font-semibold"
               >
                 LinkedIn ↗
@@ -121,8 +121,8 @@ export function AboutPageContent(): React.ReactElement {
 
             {/* Team Member 2 */}
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
-              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600">
-                [PHOTO]
+              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600 text-xl font-semibold">
+                TV
               </div>
               <h3 className="text-lg font-bold text-black mb-1">
                 Thomas van der Voort
@@ -146,8 +146,8 @@ export function AboutPageContent(): React.ReactElement {
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
                 Compliance Expert
               </div>
-              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600">
-                [PHOTO]
+              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600 text-xl font-semibold">
+                RV
               </div>
               <h3 className="text-lg font-bold text-black mb-1">
                 Randy Vanenburg
@@ -168,8 +168,8 @@ export function AboutPageContent(): React.ReactElement {
 
             {/* Team Member 4 */}
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
-              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600">
-                [PHOTO]
+              <div className="w-20 h-20 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-600 text-xl font-semibold">
+                SH
               </div>
               <h3 className="text-lg font-bold text-black mb-1">
                 Saif Habib
@@ -238,18 +238,18 @@ export function AboutPageContent(): React.ReactElement {
                 <span className="text-2xl text-green-600 font-bold mt-1">✔</span>
                 <div>
                   <h3 className="font-bold text-black mb-2">Properties queued</h3>
-                  <p className="text-gray-700">Our first income-producing properties are lined up for launch [CONFIRM current count]</p>
+                  <p className="text-gray-700">Our first income-producing properties are lined up for launch</p>
                 </div>
               </div>
             </div>
 
-            {/* Completed Milestone 3 */}
-            <div className="bg-white rounded-lg p-6 border-2 border-green-500">
+            {/* In Progress Milestone */}
+            <div className="bg-white rounded-lg p-6 border-2 border-gray-300">
               <div className="flex items-start gap-4">
-                <span className="text-2xl text-green-600 font-bold mt-1">✔</span>
+                <span className="text-2xl text-gray-400 font-bold mt-1">◻</span>
                 <div>
-                  <h3 className="font-bold text-black mb-2">Structure in place</h3>
-                  <p className="text-gray-700">The regulated legal architecture that holds every property is established [CONFIRM status before claiming]</p>
+                  <h3 className="font-bold text-black mb-2">Regulatory structure</h3>
+                  <p className="text-gray-700">We're finalising the regulated legal architecture that will hold every property before it goes live</p>
                 </div>
               </div>
             </div>
@@ -273,73 +273,13 @@ export function AboutPageContent(): React.ReactElement {
       </section>
 
       {/* 7. Advisors & Partners */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-black mb-12 text-center">
-            Backed and advised by
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-3xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-black mb-4">
+            Advisors & partners
           </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {/* Advisor 1 */}
-            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
-              <h3 className="text-lg font-bold text-black mb-2">
-                [Advisor Name]
-              </h3>
-              <p className="text-sm text-blue-600 font-semibold mb-3">
-                Advisor
-              </p>
-              <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                [CONFIRM current involvement + add 1-line credential]
-              </p>
-              <a
-                href="#"
-                className="text-blue-600 hover:text-blue-700 text-sm font-semibold"
-              >
-                Learn more ↗
-              </a>
-            </div>
-
-            {/* Partner 1 */}
-            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
-              <h3 className="text-lg font-bold text-black mb-2">
-                [Deal-flow Partner]
-              </h3>
-              <p className="text-sm text-blue-600 font-semibold mb-3">
-                Property Partner
-              </p>
-              <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                [CONFIRM whether nameable; a named property/BMV sourcing partner adds supply-side credibility]
-              </p>
-              <a
-                href="#"
-                className="text-blue-600 hover:text-blue-700 text-sm font-semibold"
-              >
-                Learn more ↗
-              </a>
-            </div>
-
-            {/* Legal Counsel */}
-            <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
-              <h3 className="text-lg font-bold text-black mb-2">
-                [Legal/Structuring Counsel]
-              </h3>
-              <p className="text-sm text-blue-600 font-semibold mb-3">
-                Legal Partner
-              </p>
-              <p className="text-sm text-gray-700 leading-relaxed mb-4">
-                [If the Luxembourg structuring firm can be named, it belongs here]
-              </p>
-              <a
-                href="#"
-                className="text-blue-600 hover:text-blue-700 text-sm font-semibold"
-              >
-                Learn more ↗
-              </a>
-            </div>
-          </div>
-
-          <p className="text-center text-sm text-gray-600 mt-8">
-            Note: Advisors and partners listed are nameable and verified. Empty slots represent opportunities under active discussion.
+          <p className="text-lg text-gray-700 leading-relaxed">
+            We're finalising our advisor and property-partner relationships. We'll name them here once they're confirmed — we'd rather show you nothing than show you something that isn't real yet.
           </p>
         </div>
       </section>
