@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
-interface Property {
+export interface Property {
   id: string;
   title: string;
   location: string;
@@ -17,7 +17,7 @@ interface Property {
   occupancyRate: string;
 }
 
-const FEATURED_PROPERTIES: Property[] = [
+export const FEATURED_PROPERTIES: Property[] = [
   {
     id: '1',
     title: 'Premium Office Tower',
