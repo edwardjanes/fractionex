@@ -61,6 +61,10 @@ const DEFAULT_MENU_ITEMS: MenuItemConfig[] = [
     label: 'FAQs',
     href: '/faqs',
   },
+  {
+    label: 'For Property Owners',
+    href: '/landlords',
+  },
 ];
 
 export function Navbar(props: NavbarProps): React.ReactElement {
