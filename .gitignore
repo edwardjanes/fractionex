@@ -50,3 +50,9 @@ next-env.d.ts
 
 # Local temp files
 temp/
+
+# Purchased Home Lengo theme source — reference material, not project code.
+# ~166MB of template zips, Figma files and vendor docs; nothing in src/ imports them.
+/Home Lengo React Theme/
+/homelengo-package/
+/mainfile/
