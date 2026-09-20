@@ -7,7 +7,7 @@ import { RedesignPropertyGrid } from '@/components/redesign/RedesignPropertyGrid
 import { RedesignHowItWorks } from '@/components/redesign/RedesignHowItWorks';
 import { RedesignLocations } from '@/components/redesign/RedesignLocations';
 import { RedesignCTA } from '@/components/redesign/RedesignCTA';
-import { FEATURED_PROPERTIES } from '@/components/PropertyListings';
+import { FEATURED_PROPERTIES } from '@/data/properties';
 
 export default function RedesignPreviewPage(): React.ReactElement {
   return (

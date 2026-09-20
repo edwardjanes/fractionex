@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowUpRight } from 'lucide-react';
-import { FEATURED_PROPERTIES } from '@/components/PropertyListings';
+import { FEATURED_PROPERTIES } from '@/data/properties';
 
 interface LocationSummary {
   city: string;

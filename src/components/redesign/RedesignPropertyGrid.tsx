@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Property } from '@/components/PropertyListings';
+import type { Property } from '@/data/properties';
 import { RedesignPropertyCard } from '@/components/redesign/RedesignPropertyCard';
 
 interface RedesignPropertyGridProps {

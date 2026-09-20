@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin } from 'lucide-react';
-import type { Property } from '@/components/PropertyListings';
+import type { Property } from '@/data/properties';
 
 function occupancyToNumber(occupancyRate: string): number {
   const parsed = parseFloat(occupancyRate.replace('%', ''));
