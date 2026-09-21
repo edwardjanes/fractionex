@@ -15,7 +15,7 @@ export function FinalCTASection(): React.ReactElement {
 
         <div className="mb-8">
           <Link
-            href="/"
+            href="/waitlist"
             className="inline-block px-10 py-4 bg-red-600 text-white font-semibold text-lg rounded-full hover:bg-red-700 transition-colors mb-4"
           >
             Get Early Access

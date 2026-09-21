@@ -335,7 +335,7 @@ export function HowItWorksPageContent(): React.ReactElement {
 
           <div className="text-center">
             <Link
-              href="/"
+              href="/waitlist"
               className="inline-block px-8 py-4 bg-[#FF0000] text-white font-semibold rounded-full hover:bg-[#CC0000] transition-colors"
             >
               Get Early Access
@@ -578,7 +578,7 @@ export function HowItWorksPageContent(): React.ReactElement {
           </p>
 
           <Link
-            href="/"
+            href="/waitlist"
             className="inline-block px-10 py-4 bg-white text-[#FF0000] font-semibold rounded-full hover:bg-gray-100 transition-colors mb-6"
           >
             Get Early Access

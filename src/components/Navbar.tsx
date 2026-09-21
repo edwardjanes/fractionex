@@ -49,7 +49,7 @@ export function Navbar(props: NavbarProps): React.ReactElement {
   const {
     logo = { href: '/', ariaLabel: 'Fractionex' },
     menuItems = DEFAULT_MENU_ITEMS,
-    ctaButton = { text: 'Our approach', href: '/about' },
+    ctaButton = { text: 'Get Early Access', href: '/waitlist' },
   } = props;
 
   const [isScrolled, setIsScrolled] = useState(false);

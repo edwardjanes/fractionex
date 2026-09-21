@@ -379,7 +379,7 @@ export function FAQAccordion(): React.ReactElement {
               Contact Us
             </Link>
             <Link
-              href="/"
+              href="/waitlist"
               className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-full border-2 border-blue-600 hover:bg-blue-50 transition-colors inline-block text-center"
             >
               Get Early Access

@@ -28,8 +28,8 @@ export default function Home() {
           headline="Fractional ownership of real property"
           subheading="Fractionex is building a platform for fractional ownership of real property through tokenisation."
           description="We're preparing to launch. No investments are available yet, and we will publish our regulatory status before anything is offered."
-          ctaText="Read the FAQs"
-          ctaHref="/faqs"
+          ctaText="Get Early Access"
+          ctaHref="/waitlist"
         />
 
         <TrustStrip />
