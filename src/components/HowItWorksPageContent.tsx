@@ -11,7 +11,7 @@ export function HowItWorksPageContent(): React.ReactElement {
     {
       question: "Where is my money held before it's invested?",
       answer:
-        'Client funds are held in segregated accounts pending investment into a property. Exact banking and safeguarding arrangements will be confirmed and published before any public offering.',
+        'We don\'t hold any client money today. Our intention is that funds would be held in segregated accounts pending investment into a property. Exact banking and safeguarding arrangements will be confirmed and published before any public offering.',
     },
     {
       question: 'What happens if Fractionex goes out of business?',
@@ -36,7 +36,7 @@ export function HowItWorksPageContent(): React.ReactElement {
     {
       question: 'Is this crypto?',
       answer:
-        "No. Tokens are the delivery mechanism, not the asset. You're investing in regulated securities backed by real property — the blockchain just makes ownership faster, cheaper, and independently verifiable.",
+        "No. Tokens are the delivery mechanism, not the asset. The aim is that you'd be investing in an interest in real property, with the blockchain as the record-keeping layer that makes ownership faster to transfer and independently verifiable.",
     },
   ];
 
@@ -80,7 +80,7 @@ export function HowItWorksPageContent(): React.ReactElement {
                 number: 3,
                 title: 'Invest and receive tokens',
                 description:
-                  "Invest from £10. Your tokens are issued to your wallet and your ownership is recorded on-chain. Each token is a regulated digital security representing your share of that specific property's income and value.",
+                  "Choose how much to invest. Tokens would be issued to your wallet and your ownership recorded on-chain. Each token is designed to represent your share of that specific property's income and value.",
               },
               {
                 number: 4,
@@ -110,9 +110,9 @@ export function HowItWorksPageContent(): React.ReactElement {
 
           <div className="max-w-3xl mx-auto mb-12">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Every property on Fractionex is held inside its own ring-fenced legal compartment — a
-              regulated securitisation structure where one property equals one legally separate
-              micro-fund. Your tokens represent a direct economic interest in that compartment: its
+              Our plan is for every property on Fractionex to be held inside its own legal compartment,
+              so that one property equals one legally separate structure. We are taking legal advice
+              on the final structure and will publish it before any investment is offered. Tokens would represent an economic interest in that compartment: its
               rental income and its value.
             </p>
 
@@ -181,13 +181,13 @@ export function HowItWorksPageContent(): React.ReactElement {
       <section className="bg-gray-50 py-20">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-black mb-8 text-center">
-            Not a coin. A regulated security.
+            Not a coin. A permissioned token.
           </h2>
 
           <div className="max-w-3xl mx-auto mb-12">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Fractionex tokens are built on ERC-3643 — the token standard designed specifically for
-              regulated digital securities. The difference matters: a normal crypto token can be
+              Fractionex tokens are built on ERC-3643 — a token standard designed for
+              permissioned digital securities. The difference matters: a normal crypto token can be
               sent to anyone, anywhere, with no checks. An ERC-3643 security token has compliance
               built into the token itself — it can only be held and transferred by verified,
               eligible investors.{' '}
@@ -321,8 +321,8 @@ export function HowItWorksPageContent(): React.ReactElement {
             </div>
 
             <p className="text-xs text-gray-600 italic">
-              Illustrative example only. Income can fall as well as rise, and valuations move in
-              both directions.
+              Illustrative example only, not a forecast or a target. Income can fall as well as rise,
+              and valuations move in both directions.
             </p>
           </div>
 
@@ -433,7 +433,7 @@ export function HowItWorksPageContent(): React.ReactElement {
                 <tbody>
                   <tr className="border-b border-gray-200 hover:bg-white transition-colors">
                     <td className="px-6 py-4 text-gray-700">Transaction commission</td>
-                    <td className="px-6 py-4 font-semibold text-black">1.5%</td>
+                    <td className="px-6 py-4 font-semibold text-black">To be confirmed</td>
                     <td className="px-6 py-4 text-gray-600">On buy and sell</td>
                   </tr>
                   <tr className="border-b border-gray-200 hover:bg-white transition-colors">
@@ -456,8 +456,8 @@ export function HowItWorksPageContent(): React.ReactElement {
             </div>
 
             <p className="text-center text-gray-700 font-semibold">
-              No hidden charges, no performance fees buried in the small print. Final fee schedule
-              will be published before launch. If a cost exists, it will be on this table.
+              Our full fee schedule will be published before launch. If a cost exists, it will be on
+              this table.
             </p>
           </div>
         </div>

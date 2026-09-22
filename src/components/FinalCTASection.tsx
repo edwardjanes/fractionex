@@ -10,7 +10,7 @@ export function FinalCTASection(): React.ReactElement {
         </h2>
 
         <p className="text-xl text-gray-700 leading-relaxed mb-12">
-          Real properties. Regulated ownership. Income from day one, from £10. Join the early access list and be first in when our launch properties go live.
+          We&apos;re preparing to launch. Join the early access list and we&apos;ll tell you when our first properties are ready, with the full details and risks.
         </p>
 
         <div className="mb-8">

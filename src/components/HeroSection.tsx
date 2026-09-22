@@ -13,11 +13,11 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({
-  headline = 'The most trusted way to own real estate',
-  subheading = 'Fractionex is the most trusted platform for fractional real estate investing through tokenisation.',
-  description = 'Fractionex lets you buy, hold, and trade fractional shares of real property — fully regulated, fully transparent, and fully yours.',
-  ctaText = 'Start Investing',
-  ctaHref = '/signup',
+  headline = 'Fractional ownership of real property',
+  subheading = 'Fractionex is building a platform for fractional ownership of real property through tokenisation.',
+  description = 'We\'re preparing to launch. No investments are available yet, and we will publish our regulatory status before anything is offered.',
+  ctaText = 'Read the FAQs',
+  ctaHref = '/faqs',
 }: HeroSectionProps): React.ReactElement {
   return (
     <section className="bg-white">
@@ -126,16 +126,16 @@ export function HeroSection({
 
                 <div className="grid grid-cols-2 gap-6 w-full max-w-[280px]">
                   <div className="text-left">
-                    <p className="text-2xl font-bold text-white">£10</p>
-                    <p className="text-xs text-white/50 mt-1">Minimum invest</p>
+                    <p className="text-2xl font-bold text-white">Pre-launch</p>
+                    <p className="text-xs text-white/50 mt-1">No investments offered yet</p>
                   </div>
                   <div className="text-left">
                     <p className="text-2xl font-bold text-white">ERC-3643</p>
-                    <p className="text-xs text-white/50 mt-1">Regulated tokens</p>
+                    <p className="text-xs text-white/50 mt-1">Token standard</p>
                   </div>
                   <div className="text-left">
-                    <p className="text-2xl font-bold text-white">7%+</p>
-                    <p className="text-xs text-white/50 mt-1">Target yields</p>
+                    <p className="text-2xl font-bold text-white">1:1</p>
+                    <p className="text-xs text-white/50 mt-1">One property per structure</p>
                   </div>
                   <div className="text-left">
                     <p className="text-2xl font-bold text-white">UK</p>

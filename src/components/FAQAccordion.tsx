@@ -22,7 +22,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'What is Fractionex?',
         answer:
-          'Fractionex is a fractional property exchange. We convert real properties into digital tokens, so you can buy a share of a property from as little as £10, earn your portion of its income automatically, and sell your tokens on our exchange whenever you choose.',
+          'Fractionex is building a fractional property platform: real properties converted into digital tokens, so investors can own a share of a property, receive their portion of its income, and offer their tokens for sale. We are preparing to launch and no investments are currently offered.',
       },
       {
         question: 'What is a property token?',
@@ -42,12 +42,12 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'How is this different from property crowdfunding?',
         answer:
-          'Two main ways: entry price and exit. Most crowdfunding platforms require hundreds or thousands to participate and lock your money in until the property is sold — often years. Fractionex starts at £10, and your tokens can be listed on our exchange at any time.',
+          'Two main ways: entry price and exit. Most crowdfunding platforms require hundreds or thousands to participate and lock your money in until the property is sold — often years. Fractionex plans a low minimum investment and a secondary market where tokens can be offered for sale — though a sale always needs a buyer.',
       },
       {
         question: 'Is this cryptocurrency?',
         answer:
-          'No. Tokens use blockchain technology for security and transparency, but they aren\'t speculative coins. Every token is backed by a real, physical property. The blockchain is the record-keeping layer — the asset is bricks and mortar.',
+          'No. Tokens use blockchain technology for security and transparency, but they aren\'t speculative coins. Each token is designed to represent an interest in a real, physical property. The blockchain is the record-keeping layer — the asset is bricks and mortar.',
       },
     ],
   },
@@ -93,7 +93,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'How do I buy tokens?',
         answer:
-          'Browse the listed properties, review the asset details and contract terms, choose how much to invest, and confirm your purchase. Your tokens appear in your wallet immediately.',
+          'Browse the listed properties, review the asset details and contract terms, choose how much to invest, and confirm your purchase.',
       },
       {
         question: 'What information do I get about each property?',
@@ -103,7 +103,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'What are the fees?',
         answer:
-          'A 1.5% commission on transactions. No management fees, no hidden charges, no annual account costs.',
+          'Our fee schedule has not been finalised. We will publish it in full before any investment is offered.',
       },
       {
         question: 'Can I invest in more than one property?',
@@ -158,7 +158,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'How quickly can I sell?',
         answer:
-          'You can list your tokens at any time. How fast they sell depends on market demand at your price — like any exchange. What you\'re never subject to is the months-long process and thousands in fees of a traditional property sale.',
+          'How fast tokens sell will depend on demand at your price, and there may be times when you can\'t sell at all. We will publish the full trading rules before launch.',
       },
       {
         question: 'What if there are no buyers?',
@@ -188,8 +188,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'Is Fractionex regulated?',
         answer:
-          '[CONFIRM — HARD BLOCKER: state the actual regulator, licence, or registration. Do not publish aspirational compliance language.]',
-        isPlaceholder: true,
+          'Not yet. Fractionex is preparing to launch and is not authorised by the Financial Conduct Authority. We have not launched any investments. We are taking legal advice and will publish our regulatory status before any investment is offered.',
       },
       {
         question: 'Who verifies the properties and valuations?',
@@ -206,7 +205,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'How secure are the smart contracts?',
         answer:
-          'Smart contracts are drafted around each property\'s specific use case, reviewed and approved before being programmed, and every transaction they execute is recorded and auditable.',
+          'We intend to have our smart contracts independently audited before launch. Every transaction they execute will be recorded on-chain and auditable.',
       },
       {
         question: 'How is my personal data protected?',
@@ -232,8 +231,7 @@ const FAQ_SECTIONS: FAQSection[] = [
       {
         question: 'Is my money protected by a compensation scheme?',
         answer:
-          '[CONFIRM: FSCS or equivalent applicability — almost certainly "no" for tokenised property, in which case say so clearly.]',
-        isPlaceholder: true,
+          'You should assume not. Investments like this are unlikely to be covered by the Financial Services Compensation Scheme. We will confirm the position before any investment is offered.',
       },
     ],
   },
@@ -288,7 +286,7 @@ export function FAQAccordion(): React.ReactElement {
                 {section.title}
               </h2>
               <div className="space-y-3">
-                {section.items.map((item, itemIdx) => {
+                {section.items.filter((item) => !item.isPlaceholder).map((item, itemIdx) => {
                   const itemId = `${sectionIdx}-${itemIdx}`;
                   const isOpen = openItems.has(itemId);
 

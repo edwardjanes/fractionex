@@ -31,7 +31,7 @@ export function AboutPageContent(): React.ReactElement {
             </p>
 
             <p className="text-xl text-gray-700 leading-relaxed">
-              Meanwhile, the technology to fix this already exists. Regulated securitisation structures can divide a property into compliant fractional shares. Blockchain can record ownership transparently and move it in seconds instead of months. What's been missing is a platform willing to combine them <span className="font-semibold">properly</span> — with real regulation, real assets, and real accountability, rather than a token and a promise.
+              Meanwhile, the technology to fix this already exists. Legal structures can divide a property into fractional shares. Blockchain can record ownership transparently and move it in seconds instead of months. What's been missing is a platform willing to combine them <span className="font-semibold">properly</span> — with proper legal advice, real assets, and real accountability, rather than a token and a promise.
             </p>
 
             <p className="text-xl text-gray-700 leading-relaxed">
@@ -56,10 +56,10 @@ export function AboutPageContent(): React.ReactElement {
             {/* Principle 1 */}
             <div className="bg-gray-50 rounded-xl p-8 border border-gray-200">
               <h3 className="text-xl font-bold text-black mb-4">
-                Regulation isn't a hurdle. It's the product.
+                Get the structure right first.
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                We chose a regulated securitisation structure, compliant security tokens, and mandatory investor verification when lighter routes existed. Slower to build, harder to fake, safer to hold. If we'd wanted shortcuts, we'd have shipped in 2024.
+                We&apos;re taking legal advice on our structure before we offer anything, and building on permissioned tokens with mandatory investor verification. Slower to build, harder to fake. If we&apos;d wanted shortcuts, we&apos;d have shipped in 2024.
               </p>
             </div>
 
@@ -198,7 +198,7 @@ export function AboutPageContent(): React.ReactElement {
             What we actually do
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Fractionex turns income-producing properties into regulated digital shares. Each property sits in its own ring-fenced legal structure; investors buy fractional shares from £10; rental income is distributed automatically; and our in-house management team works to grow each property's income — which, under our income-based valuation model, grows the value of every investor's holding.
+            Fractionex is building a platform to turn income-producing properties into fractional digital shares. The plan: each property sits in its own legal structure, investors buy fractional shares, rental income after costs is distributed to holders, and our in-house team works to improve each property&apos;s income. We haven&apos;t launched any investments yet.
           </p>
           <Link
             href="/how-it-works"
@@ -249,7 +249,7 @@ export function AboutPageContent(): React.ReactElement {
                 <span className="text-2xl text-gray-400 font-bold mt-1">◻</span>
                 <div>
                   <h3 className="font-bold text-black mb-2">Regulatory structure</h3>
-                  <p className="text-gray-700">We're finalising the regulated legal architecture that will hold every property before it goes live</p>
+                  <p className="text-gray-700">We're taking legal advice on the structure that will hold every property, and will publish it before anything goes live</p>
                 </div>
               </div>
             </div>

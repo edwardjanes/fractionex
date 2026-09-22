@@ -30,7 +30,7 @@ export function SolutionPillars(): React.ReactElement {
               Earn while you hold
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Every property pays. Rental income is distributed to token holders automatically, in proportion to what you own. And because our in-house team actively manages each property to grow its income, your share is designed to grow too.
+              Rental income, after costs, is intended to be distributed to token holders in proportion to what they own. Income isn&apos;t guaranteed: rents can fall, and properties can sit empty.
             </p>
           </div>
 
@@ -41,7 +41,7 @@ export function SolutionPillars(): React.ReactElement {
               Exit on your schedule
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              Traditional property takes months to sell. Fractionex runs structured liquidity windows where you can sell your tokens at the property's current valuation — a designed exit, not a hope for a buyer.
+              Traditional property takes months to sell. We plan to run structured liquidity windows where holders can offer tokens for sale. A sale still needs a buyer, so we can&apos;t guarantee you&apos;ll be able to sell when you want, or at the price you want.
             </p>
           </div>
         </div>
