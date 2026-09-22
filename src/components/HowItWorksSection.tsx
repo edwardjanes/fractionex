@@ -59,7 +59,7 @@ export function HowItWorksSection(): React.ReactElement {
 
         <div className="text-center">
           <Link
-            href="/"
+            href="/waitlist"
             className="inline-block px-8 py-4 bg-red-600 text-white font-semibold rounded-full hover:bg-red-700 transition-colors"
           >
             Get Early Access

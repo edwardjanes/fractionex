@@ -296,7 +296,7 @@ export function AboutPageContent(): React.ReactElement {
           </p>
 
           <Link
-            href="/"
+            href="/waitlist"
             className="inline-block px-10 py-4 bg-white text-red-600 font-semibold rounded-full hover:bg-gray-100 transition-colors mb-6"
           >
             Get Early Access
