@@ -25,11 +25,11 @@ export default function Home() {
         <RiskWarningBanner />
 
         <HeroSection
-          headline="The most trusted way to own real estate"
-          subheading="Fractionex is the most trusted platform for fractional real estate investing through tokenisation."
-          description="Fractionex lets you buy, hold, and trade fractional shares of real property — fully regulated, fully transparent, and fully yours."
-          ctaText="Start Investing"
-          ctaHref="/signup"
+          headline="Fractional ownership of real property"
+          subheading="Fractionex is building a platform for fractional ownership of real property through tokenisation."
+          description="We're preparing to launch. No investments are available yet, and we will publish our regulatory status before anything is offered."
+          ctaText="Read the FAQs"
+          ctaHref="/faqs"
         />
 
         <TrustStrip />

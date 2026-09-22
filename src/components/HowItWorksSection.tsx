@@ -7,7 +7,7 @@ export function HowItWorksSection(): React.ReactElement {
       number: 1,
       title: 'Create your account',
       description:
-        'Sign up and verify your identity in minutes. Regulated platform, so KYC is quick but real.',
+        'Sign up and verify your identity. Identity checks are part of the process, not an optional extra.',
     },
     {
       number: 2,

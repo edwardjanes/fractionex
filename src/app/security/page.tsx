@@ -27,9 +27,10 @@ export default function Security() {
             <section>
               <h2 className="text-xl font-bold text-black mb-3">Our approach</h2>
               <p className="text-gray-700 leading-relaxed">
-                Fractionex is designed so that investor assets sit in ring-fenced legal structures
-                separate from the operating company. Tokens are regulated digital securities
-                (ERC-3643) with compliance controls built into the token itself.
+                Fractionex is being designed so that investor assets sit in legal structures
+                separate from the operating company, subject to the legal advice we are taking.
+                Tokens are built on ERC-3643, a permissioned standard with compliance controls built
+                into the token itself.
               </p>
             </section>
 

@@ -116,7 +116,7 @@ export function Footer(): React.ReactElement {
                 />
               </Link>
               <p className="text-sm leading-relaxed max-w-xs mb-5" style={{ color: '#9ca3af' }}>
-                Fractional real estate investing through tokenisation — fully regulated, fully transparent.
+                Fractional real estate through tokenisation. Pre-launch: no investments are currently offered.
               </p>
               <div className="flex items-center gap-2 flex-wrap">
                 {socialLinks.map((social) => (
