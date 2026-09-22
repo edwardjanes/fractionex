@@ -10,7 +10,7 @@ export function FinalCTASection(): React.ReactElement {
         </h2>
 
         <p className="text-xl text-gray-700 leading-relaxed mb-12">
-          Real properties. Regulated ownership. Income from day one, from £10. Join the early access list and be first in when our launch properties go live.
+          We&apos;re preparing to launch. Join the early access list and we&apos;ll tell you when our first properties are ready, with the full details and risks.
         </p>
 
         <div className="mb-8">
@@ -28,7 +28,7 @@ export function FinalCTASection(): React.ReactElement {
 
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-xs text-gray-600 leading-relaxed">
-            <strong>Risk Disclosure:</strong> Fractionex offers investments in property-backed digital securities. Capital at risk. Property values and rental income can fall as well as rise. Past performance is not indicative of future results.{' '}
+            <strong>Risk Disclosure:</strong> Any future Fractionex investment would be in property-backed digital securities. Capital at risk. Property values and rental income can fall as well as rise. Past performance is not indicative of future results.{' '}
             <Link href="/legal" className="text-blue-600 hover:text-blue-700">
               Full legal disclosures
             </Link>

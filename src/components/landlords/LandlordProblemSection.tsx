@@ -40,9 +40,9 @@ export function LandlordOfferSection(): React.ReactElement {
           Unlock the cash tied up in your property. Keep the upside. Do none of the admin.
         </h2>
         <p className="text-xl text-gray-700 leading-relaxed mb-10">
-          FractionEx tokenises a share of your property — as little as 10–20% — turning it into a
-          liquid, tradeable asset. You get access to cash without a full sale. We take over the
-          day-to-day work of actively managing it for a higher yield. You keep majority ownership
+          FractionEx tokenises a share of your property — as little as 10–20% — turning it into
+          tradeable tokens. The aim is access to cash without a full sale. We take over the
+          day-to-day work of actively managing it, aiming for a higher yield. You keep majority ownership
           throughout.
         </p>
         <a
@@ -80,7 +80,7 @@ export function LandlordHowItWorksSection(): React.ReactElement {
       number: 4,
       title: 'Your property goes live — and starts working harder',
       description:
-        'Your dashboard goes live, our active management team takes over day-to-day optimisation, and you can access liquidity at scheduled trading windows.',
+        'Your dashboard goes live, our active management team takes over day-to-day optimisation, and tokens can be offered for sale at scheduled trading windows. A sale needs a buyer, so it isn\'t guaranteed.',
     },
   ];
 

@@ -9,10 +9,10 @@ export function TrustStrip(): React.ReactElement {
           <div className="text-center md:text-left">
             <div className="text-2xl mb-2">🛡️</div>
             <p className="text-sm font-semibold text-black mb-1">
-              Regulated structure
+              One property, one structure
             </p>
             <p className="text-xs text-gray-600">
-              [CONFIRM: REGULATOR / STRUCTURE NAME]
+              Each property is intended to sit in its own legal structure, subject to legal advice
             </p>
           </div>
 
@@ -23,7 +23,7 @@ export function TrustStrip(): React.ReactElement {
               Asset-backed
             </p>
             <p className="text-xs text-gray-600">
-              Every token backed by real, income-producing property
+              Each token is designed to represent an interest in a specific property
             </p>
           </div>
 
@@ -31,10 +31,10 @@ export function TrustStrip(): React.ReactElement {
           <div className="text-center md:text-left">
             <div className="text-2xl mb-2">🔍</div>
             <p className="text-sm font-semibold text-black mb-1">
-              Independently audited
+              Independent audit planned
             </p>
             <p className="text-xs text-gray-600">
-              [CONFIRM: AUDIT FIRM NAME]
+              We intend to have our smart contracts independently audited before launch
             </p>
           </div>
 
@@ -42,10 +42,10 @@ export function TrustStrip(): React.ReactElement {
           <div className="text-center md:text-left">
             <div className="text-2xl mb-2">🔗</div>
             <p className="text-sm font-semibold text-black mb-1">
-              Compliant security tokens
+              Permissioned tokens
             </p>
             <p className="text-xs text-gray-600">
-              Built on the ERC-3643 regulated token standard
+              Built on ERC-3643, a token standard that restricts holding to verified investors
             </p>
           </div>
         </div>

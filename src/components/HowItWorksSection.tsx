@@ -7,7 +7,7 @@ export function HowItWorksSection(): React.ReactElement {
       number: 1,
       title: 'Create your account',
       description:
-        'Sign up and verify your identity in minutes. Regulated platform, so KYC is quick but real.',
+        'Sign up and verify your identity. Identity checks are part of the process, not an optional extra.',
     },
     {
       number: 2,
@@ -25,7 +25,7 @@ export function HowItWorksSection(): React.ReactElement {
       number: 4,
       title: 'Earn and grow',
       description:
-        "Collect your share of rental income, watch valuations update as property income grows, and sell in liquidity windows whenever you're ready.",
+        "Receive your share of rental income after costs, see valuations update as property income changes, and offer tokens for sale in liquidity windows. A sale needs a buyer, so it isn't guaranteed.",
     },
   ];
 

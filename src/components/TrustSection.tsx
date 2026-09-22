@@ -17,18 +17,18 @@ export function TrustSection({
   badges = [
     {
       icon: <IconSafe className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] sm:w-[100px] sm:h-[100px]" />,
-      title: 'Fully Regulated',
-      description: 'Licensed and regulated for your protection',
+      title: 'Straight about our status',
+      description: 'We are not yet authorised by the FCA. We will publish our regulatory status before any investment is offered.',
     },
     {
       icon: <IconWorldwide className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] sm:w-[100px] sm:h-[100px]" />,
-      title: 'Easy to Trade',
-      description: 'Liquid market with seamless trading',
+      title: 'Exit designed in',
+      description: 'Secondary trading is planned, but a sale always needs a buyer and we can\'t guarantee one.',
     },
     {
       icon: <IconSupport className="w-[150px] h-[150px] md:w-[120px] md:h-[120px] sm:w-[100px] sm:h-[100px]" />,
       title: 'Transparent',
-      description: 'Clear fees and real-time pricing',
+      description: 'Our full fee schedule will be published before launch.',
     },
   ],
   citation = 'Fractionex - The future of real estate investing',
@@ -58,7 +58,7 @@ export function TrustSection({
           'mb-12 md:mb-12 sm:mb-8',
           'max-w-2xl mx-auto'
         )}>
-          Invest in real estate with confidence. Fractionex makes property investing accessible, transparent, and secure.
+          We&apos;re building Fractionex to make property ownership more accessible and more transparent. Here&apos;s where we stand today.
         </p>
 
         <div className={cn(

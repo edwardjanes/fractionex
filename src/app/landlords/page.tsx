@@ -43,16 +43,15 @@ export default function LandlordsPage() {
       <main className="flex flex-col">
         <HeroSection
           headline="UAE landlords: your property could be earning more. Let's find out how much."
-          subheading="FractionEx unlocks the cash tied up in your property and actively manages it for a higher yield — without you selling it, and without you doing the work."
+          subheading="Fractionex aims to unlock some of the cash tied up in your property and manage it actively for a higher yield — without you selling it, and without you doing the work."
           description=""
           ctaText="Get My Free Yield Report"
           ctaHref="#audit-form"
-          videoSrc="/images/coinbase/hero-video.webm"
         />
 
         <div className="w-full bg-white text-center py-4">
-          <Link href="/properties" className="text-sm text-gray-500 hover:text-red-600">
-            Looking to invest instead? Explore properties →
+          <Link href="/how-it-works" className="text-sm text-gray-500 hover:text-red-600">
+            Interested in investing instead? See how it works →
           </Link>
         </div>
 

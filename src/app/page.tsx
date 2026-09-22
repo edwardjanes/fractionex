@@ -10,70 +10,40 @@ import { DifferentiationSection } from '@/components/DifferentiationSection';
 import { PropertyListings } from '@/components/PropertyListings';
 import { OwnerDeveloperStrip } from '@/components/OwnerDeveloperStrip';
 import { FinalCTASection } from '@/components/FinalCTASection';
-import { FeaturesCarousel } from '@/components/FeaturesCarousel';
-import { CryptoAssetsGrid } from '@/components/CryptoAssetsGrid';
 import { TrustSection } from '@/components/TrustSection';
 import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
       <Navbar />
 
-      {/* Main Content */}
+      {/* Offset for fixed 69px nav */}
+      <div style={{ height: '69px' }} />
+
       <main className="flex flex-col">
-        {/* Risk Warning Banner */}
         <RiskWarningBanner />
 
-        {/* Hero Section */}
         <HeroSection
-          headline="The most trusted way to own real estate"
-          subheading="Fractionex is the most trusted platform for fractional real estate investing through tokenisation."
-          description="Fractionex lets you buy, hold, and trade fractional shares of real property — fully regulated, fully transparent, and fully yours."
-          ctaText="Start Investing"
-          ctaHref="/signup"
-          videoSrc="/images/coinbase/hero-video.webm"
+          headline="Fractional ownership of real property"
+          subheading="Fractionex is building a platform for fractional ownership of real property through tokenisation."
+          description="We're preparing to launch. No investments are available yet, and we will publish our regulatory status before anything is offered."
+          ctaText="Read the FAQs"
+          ctaHref="/faqs"
         />
 
-        {/* Trust Strip */}
         <TrustStrip />
-
-        {/* Problem Section */}
         <ProblemSection />
-
-        {/* Solution Pillars */}
         <SolutionPillars />
-
-        {/* How It Works */}
         <HowItWorksSection />
-
-        {/* Ownership & Security */}
         <OwnershipSecurity />
-
-        {/* Differentiation */}
         <DifferentiationSection />
-
-        {/* Properties Preview */}
         <PropertyListings />
-
-        {/* Owner/Developer Strip */}
         <OwnerDeveloperStrip />
-
-        {/* Final CTA */}
         <FinalCTASection />
-
-        {/* Features Carousel (existing) */}
-        <FeaturesCarousel />
-
-        {/* Crypto Assets Grid (existing) */}
-        <CryptoAssetsGrid />
-
-        {/* Trust Section (existing) */}
         <TrustSection />
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

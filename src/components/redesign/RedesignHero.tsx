@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { MapPin, Building2, TrendingUp, Search } from 'lucide-react';
+import { MapPin, Building2, Search } from 'lucide-react';
 
 export function RedesignHero(): React.ReactElement {
   return (
@@ -13,30 +13,30 @@ export function RedesignHero(): React.ReactElement {
             Tokenised UK real estate
           </p>
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-black sm:text-5xl lg:text-6xl">
-            The most trusted way to own real estate
+            Fractional ownership of real property
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-gray-700 sm:text-xl">
-            Fractionex is the most trusted platform for fractional real estate investing through
+            Fractionex is building a platform for fractional ownership of real property through
             tokenisation.
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-base text-gray-600">
-            Fractionex lets you buy, hold, and trade fractional shares of real property — fully
-            regulated, fully transparent, and fully yours.
+            We&apos;re preparing to launch. No investments are available yet, and we will publish our
+            regulatory status before anything is offered.
           </p>
 
           <div className="mt-8 flex justify-center">
             <Link
-              href="/signup"
+              href="/faqs"
               className="inline-flex items-center justify-center rounded-full bg-[var(--brand-red)] px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-[var(--brand-red-hover)]"
             >
-              Start Investing
+              Read the FAQs
             </Link>
           </div>
         </div>
 
         {/* Quick-filter / search bar — presentational only */}
         <div className="mx-auto mt-14 max-w-4xl rounded-2xl border border-gray-200 bg-white p-3 shadow-lg shadow-gray-200/50 sm:p-4">
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 sm:items-stretch sm:gap-0 sm:divide-x sm:divide-gray-200">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:items-stretch sm:gap-0 sm:divide-x sm:divide-gray-200">
             <label className="flex flex-1 items-center gap-3 px-2 py-2 sm:px-5">
               <MapPin className="h-5 w-5 shrink-0 text-gray-400" aria-hidden="true" />
               <span className="flex w-full flex-col">
@@ -71,21 +71,6 @@ export function RedesignHero(): React.ReactElement {
               </span>
             </label>
 
-            <label className="flex flex-1 items-center gap-3 px-2 py-2 sm:px-5">
-              <TrendingUp className="h-5 w-5 shrink-0 text-gray-400" aria-hidden="true" />
-              <span className="flex w-full flex-col">
-                <span className="text-xs font-medium text-gray-500">Min. return</span>
-                <select
-                  className="w-full appearance-none bg-transparent text-sm font-semibold text-black outline-none"
-                  defaultValue="Any return"
-                >
-                  <option>Any return</option>
-                  <option>6%+</option>
-                  <option>7%+</option>
-                  <option>8%+</option>
-                </select>
-              </span>
-            </label>
           </div>
 
           <button

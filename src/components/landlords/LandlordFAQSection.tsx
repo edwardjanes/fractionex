@@ -17,8 +17,7 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: 'Is tokenisation legal in the UAE?',
     answer:
-      "FractionEx operates within the UAE's evolving regulatory framework for tokenised assets, and we'll confirm the specific regulatory basis that applies to your property during onboarding.",
-    isPlaceholder: true,
+      "Fractionex hasn't launched and isn't licensed by VARA or any other UAE regulator. We're taking legal advice and will confirm the regulatory position before we take on any property.",
   },
   {
     question: 'What happens to my current tenants?',
@@ -33,7 +32,7 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     question: 'When can I access cash from my tokenised share?',
     answer:
-      'At scheduled trading windows, so you always know in advance when liquidity is available.',
+      'Tokens could be offered for sale at scheduled trading windows, so you know in advance when a sale is possible. A sale needs a buyer, so it isn\'t guaranteed.',
   },
   {
     question: 'What if nobody buys my tokens at a trading window?',

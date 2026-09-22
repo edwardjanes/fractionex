@@ -20,21 +20,21 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Fractionex - Fractional Property Investment & Exchange",
-  description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange. The most trusted fractional property platform.",
+  description: "Fractionex is building a platform for fractional ownership of UK property through tokenisation. Pre-launch: no investments are currently offered.",
   keywords: "fractional property, property investment, real estate, UK property, property exchange, fractional ownership",
   authors: [{ name: "Fractionex" }],
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://fractionex.com",
+    url: "https://fractionex.io",
     siteName: "Fractionex",
     title: "Fractionex - Fractional Property Investment & Exchange",
-    description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange.",
+    description: "Fractionex is building a platform for fractional ownership of UK property through tokenisation. Pre-launch: no investments are currently offered.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Fractionex - Fractional Property Investment & Exchange",
-    description: "Invest in premium UK real estate from just £10. Buy fractional shares, earn automatic income distributions, and trade on our exchange.",
+    description: "Fractionex is building a platform for fractional ownership of UK property through tokenisation. Pre-launch: no investments are currently offered.",
   },
 };
 

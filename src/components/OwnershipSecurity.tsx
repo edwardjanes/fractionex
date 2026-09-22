@@ -10,10 +10,10 @@ export function OwnershipSecurity(): React.ReactElement {
 
         <div className="max-w-3xl mx-auto mb-16">
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Every Fractionex property sits inside its own regulated legal structure — one property, one compartment, fully ring-fenced. Your tokens are compliant digital securities (ERC-3643 standard) representing a direct economic share of that property's income and value. Not a promise. Not an IOU. A regulated instrument backed by a real asset.
+            Our plan is for every Fractionex property to sit inside its own legal structure — one property, one compartment. Tokens (ERC-3643 standard) would represent an economic share of that property&apos;s income and value. We are taking legal advice on the final structure and will publish it in full before any investment is offered.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            If Fractionex disappeared tomorrow, the properties and your rights to them would still exist — the structure is designed so investor assets are legally separate from our business.
+            The aim is for investor assets to be legally separate from our own business. How far that protection goes depends on the final structure, and we&apos;ll set that out plainly before launch.
           </p>
         </div>
 

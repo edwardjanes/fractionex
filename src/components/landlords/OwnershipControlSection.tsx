@@ -11,10 +11,10 @@ export function OwnershipControlSection(): React.ReactElement {
         <p className="text-xl text-gray-700 leading-relaxed mb-8">
           You choose how much of your property to tokenise — typically 10–20% — and you keep
           majority ownership and decision-making rights throughout. This isn&apos;t a sale.
-          It&apos;s a way to access liquidity while your property keeps working for you.
+          It&apos;s a way to raise cash from part of your property while it keeps working for you.
         </p>
         <p className="text-2xl font-bold text-black mb-8">
-          Ownership Control Guarantee: <span className="font-normal">You decide the percentage. You keep control. Full stop.</span>
+          Ownership control: <span className="font-normal">You decide the percentage, and you keep majority ownership.</span>
         </p>
         <Link href="/security" className="text-red-600 font-semibold hover:underline">
           See how your ownership is protected →
