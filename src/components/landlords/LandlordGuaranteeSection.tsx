@@ -5,7 +5,7 @@ export function LandlordGuaranteeSection(): React.ReactElement {
     <section className="w-full bg-black py-20">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-          The No-Surprises Guarantee
+          No obligation
         </h2>
         <p className="text-xl text-gray-200 leading-relaxed">
           We&apos;ll show you exactly what your property could be earning before you commit to

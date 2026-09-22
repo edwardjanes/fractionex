@@ -28,7 +28,7 @@ export function FinalCTASection(): React.ReactElement {
 
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-xs text-gray-600 leading-relaxed">
-            <strong>Risk Disclosure:</strong> Fractionex offers investments in property-backed digital securities. Capital at risk. Property values and rental income can fall as well as rise. Past performance is not indicative of future results.{' '}
+            <strong>Risk Disclosure:</strong> Any future Fractionex investment would be in property-backed digital securities. Capital at risk. Property values and rental income can fall as well as rise. Past performance is not indicative of future results.{' '}
             <Link href="/legal" className="text-blue-600 hover:text-blue-700">
               Full legal disclosures
             </Link>

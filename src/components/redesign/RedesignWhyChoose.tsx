@@ -11,17 +11,17 @@ const BENEFITS: Benefit[] = [
   {
     icon: Unlock,
     heading: 'Start with what you have',
-    copy: 'Buy fractional shares in income-producing properties from as little as £10. No deposit, no mortgage, no chain.',
+    copy: 'Our aim is a low minimum investment for fractional shares in income-producing property. No deposit, no mortgage, no chain.',
   },
   {
     icon: Wallet,
     heading: 'Earn while you hold',
-    copy: 'Rental income is distributed to token holders automatically, in proportion to what you own — while our team actively manages each property to grow it.',
+    copy: 'Rental income, after costs, is intended to be distributed to token holders in proportion to what they own. Income isn’t guaranteed: rents can fall and properties can sit empty.',
   },
   {
     icon: Zap,
     heading: 'Exit on your schedule',
-    copy: 'Fractionex runs structured liquidity windows where you can sell your tokens at the property’s current valuation — a designed exit, not a hope for a buyer.',
+    copy: 'We plan to run structured liquidity windows where holders can offer tokens for sale. A sale still needs a buyer, so we can’t guarantee you’ll be able to sell when you want, or at the price you want.',
   },
   {
     icon: Users,

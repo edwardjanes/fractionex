@@ -70,10 +70,10 @@ export function RedesignHeader(): React.ReactElement {
             Sign in
           </Link>
           <Link
-            href="/signup"
+            href="/about"
             className="rounded-full bg-[var(--brand-red)] px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--brand-red-hover)]"
           >
-            Invest Now
+            Our approach
           </Link>
         </div>
 
@@ -113,11 +113,11 @@ export function RedesignHeader(): React.ReactElement {
               Sign in
             </Link>
             <Link
-              href="/signup"
+              href="/about"
               className="w-full rounded-full bg-[var(--brand-red)] py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[var(--brand-red-hover)]"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Invest Now
+              Our approach
             </Link>
           </div>
         </div>

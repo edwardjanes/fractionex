@@ -25,7 +25,7 @@ export function HowItWorksSection(): React.ReactElement {
       number: 4,
       title: 'Earn and grow',
       description:
-        "Collect your share of rental income, watch valuations update as property income grows, and sell in liquidity windows whenever you're ready.",
+        "Receive your share of rental income after costs, see valuations update as property income changes, and offer tokens for sale in liquidity windows. A sale needs a buyer, so it isn't guaranteed.",
     },
   ];
 

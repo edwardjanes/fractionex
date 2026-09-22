@@ -12,7 +12,7 @@ const STEPS: Step[] = [
     number: 1,
     title: 'Create your account',
     description:
-      'Sign up and verify your identity in minutes. Regulated platform, so KYC is quick but real.',
+      'Sign up and verify your identity. Identity checks are part of the process, not an optional extra.',
   },
   {
     number: 2,
@@ -24,13 +24,13 @@ const STEPS: Step[] = [
     number: 3,
     title: 'Buy your share',
     description:
-      'Invest from £10. Your tokens are issued to your wallet and your ownership is recorded on-chain.',
+      'Choose how much to invest. Tokens would be issued to your wallet and your ownership recorded on-chain.',
   },
   {
     number: 4,
     title: 'Earn and grow',
     description:
-      "Collect your share of rental income, watch valuations update as property income grows, and sell in liquidity windows whenever you're ready.",
+      "Receive your share of rental income after costs, see valuations update as property income changes, and offer tokens for sale in liquidity windows. A sale needs a buyer, so it isn't guaranteed.",
   },
 ];
 

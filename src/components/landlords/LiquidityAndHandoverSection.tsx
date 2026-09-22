@@ -5,12 +5,12 @@ export function LiquiditySection(): React.ReactElement {
     <section className="w-full bg-white py-20">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-black mb-8">
-          Liquidity on a schedule you can plan around.
+          Trading windows on a schedule you can plan around.
         </h2>
         <p className="text-xl text-gray-700 leading-relaxed">
-          Tokenised shares in your property can be sold at scheduled trading windows, so you know
-          in advance when you&apos;ll be able to access cash — rather than waiting on an
-          open-ended buyer search.
+          Tokenised shares in your property could be offered for sale at scheduled trading windows,
+          so you know in advance when a sale is possible. A sale still needs a buyer, so we
+          can&apos;t guarantee you&apos;ll sell at a particular window or price.
         </p>
       </div>
     </section>
